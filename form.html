@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>sp24</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="main-header__inner">
+				<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
+				<nav class="main-nav">
+					<ul class="main-nav__ul">
+						<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link main-nav__link--active">Номера</a></li>
+						<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
+						<li class="main-nav__item"><a href="index.html" class="main-nav__link">Отдых</a></li>
+						<li class="main-nav__item"><a href="form.html" class="main-nav__link">Контакты</a></li>
+					
+					</ul>
+					</nav>
+					<div class="main-header__tel-wrap">
+						<a href="#" class="main-header__tel-wrap__tel">8-333445599</a>
+						<span class="main-header__adress>С-Петербург,  Приморское шоссе, 5</span>
+					</div>
+
+					<a href="#" class="btn btn-icon">Забронировать</a>
+			</div>	
+		</header>
+		<form action="kode.php" method="post" class="form__wrap">
+		<section class="form__bron">
+			<h1 class="form__title">Бронирование</h1>
+			<p class="form__descr">
+				Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните
+				по телефону: <strong class="form__bron--red">+7 812 777-55-88</strong>
+			</p>
+
+		</section>
+		<fieldset class="data__rest">
+			<span class="data__rest__step">Шаг 1</span>
+			<h2 class="data__rest__descr">Дата отдыха</h2>
+				<div class="data__restwrap">
+					<h4 class="data__rest__h4">Дата выезда</h4>
+						<div class="inp-wrap">
+							<input type="date" name="date" class="tbl"/>
+							
+						</div>
+
+						<h4 class="data__rest__h4">Дата выезда</h4>
+						<div class="tbl-wrap">
+							<div class="tbl">ДД</div>
+							<div class="tbl">ММ</div>
+							<div class="tbl">ГГГГ</div>
+						</div>
+
+				</div>
+			
+		</fieldset>
+
+		<fieldset class="data__rest">
+			<span class="data__rest__step">Шаг 2</span>
+			<h2 class="data__rest__descr">Место проживания</h2>
+				<div class="data__restwrap">
+					<input type="checkbox"	name="place" class="place__block" value="Отель"/>
+					<input type="checkbox"	name="place" class="place__block" value="Коттедж" checked="checked"/>		
+				</div>
+		</fieldset>
+
+		<fieldset class="data__rest">
+			<span class="data__rest__step">Шаг 3</span>
+			<h2 class="data__rest__descr">Тип коттеджа</h2>
+				<div class="kottedj__wrap">
+					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Флагман" checked="checred"/>
+					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Озерный"/>
+					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Ольховка"/>
+					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Портовый"/>
+				</div>
+
+				<div class="kottedj__wrap kottedj__wrap--single">
+					<div class="kottedj__descr"><p class="kottedj__descr__p">Площадь 100м2</p></div>
+					<div class="kottedj__descr"><p class="kottedj__descr__p">3 комнаты</p></div>
+					<div class="kottedj__descr"><p class="kottedj__descr__p">5 спальных мест</p></div>
+					<div class="kottedj__descr"><p class="kottedj__descr__p">Раздельный санузел</p></div>
+					<div class="kottedj__descr"><p class="kottedj__descr__p">WI-FI</p></div>
+				</div>
+
+
+		</fieldset>
+
+		<fieldset class="data__rest">
+			<span class="data__rest__step">Шаг 4</span>
+				<div class="person__wrap">
+					
+						<input type="text"	name="First Name" class="personal__block" placeholder="First Name" required="required" />
+						<input type="text"	name="Last Name" class="personal__block" placeholder="Last Name" required="required" />
+						<label for="phone">Мы свяжемся с вами в случае необходимости</label>
+						<input type="phone"	name="phone" class="personal__block" placeholder="Phone" required="required" />
+						<label for="phone">На этот адрес мы вышлем Вам подтверждение о забронированном номере</label>
+						<input type="email"	name="email" class="personal__block" placeholder="email" required="required" />
+					
+				</div>
+			</fieldset>
+
+			<fieldset class="data__rest">
+			<span class="data__rest__step">Шаг 4</span>
+				<div class="date__wrap">
+					<div class="for__pay">
+						<h4 class="for__pay__h4">К оплате</h4>
+						<p class="for__pay__p">Пожалуйста, <a href="#">выберите дату</a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
+					</div>
+					<div class="for__arrive">
+						<h4 class="for__pay__h4">По приезду</h4>
+						<p class="for__pay__p">Вы можете произвести оплату по факту заселения</p>
+					</div>
+					<div class="now">
+						<h4 class="for__pay__h4">Сейчас</h4>
+						<p class="for__pay__p">рямо сейчас Вы можете произвести оплату с помощью банковской карты</p>
+
+					</div>
+					<label for="Number cart ">Номер карты</label>
+						<input type="number"	name="Number cart" class="cart__block" placeholder="number" required="required" />
+					<label for="Kode ">Код CVV</label>
+						<input type="number"	name="Kode" class="kode__block" placeholder="number" required="required" />
+					<label for="Last name">Фамилия владельца карты</label>
+						<input type="text"	name="Last name" class="name__block" placeholder="Last Name" required="required" />
+
+					<label for="date">Действует до</label>
+						<input type="date"	name="date" class="date__block" placeholder="01 7 2016" required="required" />
+
+				</div>
+			</fieldset>
+
+			<input type="submit" value="Забронировать"/>
+			</form>
+
+			<footer>
+				<div class="foot_inner">
+					<div class="foot_inner-float">
+						<span>С.Петербург</span>
+						<span>Приморское ш.600</span>
+					</div>
+					<div class="foot_inner-float">
+						<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
+						<div class="social">
+							<i class="fa"></i>
+							<i class="fa"></i>
+							<i class="fa"></i>
+						</div>
+					</div>
+					<div class="foot_inner-float">
+					<span>+7 978 667 55 67</span>
+					<span>info@greenvalley.ru</span>
+						
+					</div>
+
+				</div>
+
+			</footer>
+	</body>
+	</html>	
