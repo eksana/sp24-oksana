@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>single</title>
-	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="style.css">-->
+	@@include('_include/page_head.html')
 </head>
 <body>
 	<!--<header class="main-header">
@@ -27,7 +29,7 @@
 					<a href="#" class="btn btn-icon">Забронировать</a>
 			</div>	
 		</header>-->
-		@import '../../scss/main-header.scss'; 
+		<!--@import '../../scss/main-header.scss'; -->
 		@@include('blocks/main-header/main-header.html')
 <!---------------------------------------------------------------------------------------->
 		<!--<section class="cat">
@@ -101,7 +103,7 @@
 					</div>
 				</div>
 			</div>-->
-			@import '../../scss/where.scss'; 
+			<!--@import '../../scss/where.scss'; -->
 			@@include('blocks/where/where.html')
 	<!---------------------------------------------------------------------------------------->
 
@@ -128,8 +130,9 @@
 				</div>
 
 			</footer>-->
-			@import '../../scss/footer.scss'; 
+			<!--@import '../../scss/footer.scss'; -->
 			@@include('blocks/footer/footer.html')
+			@@include('_include/page_bottom.html')
 	
 </body>
 </html>
