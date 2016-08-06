@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>sp24</title>
+	<title>single</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<!--<header class="main-header">
 			<div class="main-header__inner">
 				<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
 				<nav class="main-nav">
@@ -26,9 +26,11 @@
 
 					<a href="#" class="btn btn-icon">Забронировать</a>
 			</div>	
-		</header>
+		</header>-->
+
+		@@include('blocks/page-header/page-header.html')
 <!---------------------------------------------------------------------------------------->
-		<section class="cat">
+		<!--<section class="cat">
 			<h2 class="cat__cat">Эконом</h2>
 			<div class="catdescr__descr">от<span class="cat--color">3400</span> руб/сутки</div>
 
@@ -75,10 +77,12 @@
 						
 					</div>
 					</article>
-			</section>
+			</section>-->
+
+			@@include('blocks/cat/cat.html')
 	<!---------------------------------------------------------------------------------------->
 
-			<div class="where" style="background:url();">
+			<!--<div class="where" style="background:url();">
 				<div class="where_inner">
 					<div class="where_card">
 						<img src="" alt="фото номера отеля" class="hotel">
@@ -96,10 +100,12 @@
 							<p class="descr_h6">От<span class="descr_h6--red">5700</span>в/сутки</p>
 					</div>
 				</div>
-			</div>
+			</div>-->
+
+			@@include('blocks/where/where.html')
 	<!---------------------------------------------------------------------------------------->
 
-			<footer>
+			<!--<footer>
 				<div class="foot_inner">
 					<div class="foot_inner-float">
 						<span>С.Петербург</span>
@@ -121,7 +127,9 @@
 
 				</div>
 
-			</footer>
+			</footer>-->
+
+			@@include('blocks/footer/footer.html')
 	
 </body>
 </html>
