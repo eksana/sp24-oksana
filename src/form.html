@@ -4,14 +4,15 @@
 		<meta charset="UTF-8">
 		<title>sp24</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/reset.css">
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="main-header__inner">
 				<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
 				<nav class="main-nav">
-					<ul class="main-nav__ul">
-						<li class="main-nav__itemitem"><a href="Room_list.html" class="main-nav__link main-nav__link--active">Номера</a></li>
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link main-nav__link--active">Номера</a></li>
 						<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
 						<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
 						<li class="main-nav__item"><a href="index.html" class="main-nav__link">Отдых</a></li>
@@ -20,17 +21,18 @@
 					</ul>
 					</nav>
 					<div class="main-header__tel-wrap">
-						<a href="#" class="main-header__tel-wrap__tel">8-333445599</a>
-						<span class="main-header__adress>С-Петербург,  Приморское шоссе, 5</span>
+						<a href="#" class="main-header__tel">8-333445599</a>
+						<span class="main-header__adress">С-Петербург,  Приморское шоссе, 5</span>
 					</div>
 
 					<a href="#" class="btn btn-icon">Забронировать</a>
 			</div>	
 		</header>
-
-
+<!-------------------------------------------------------------------------------------------->
 		<form action="kode.php" method="post" class="form">
 			<div class="form__wrap">
+
+
 		<section class="form__bron">
 			<h1 class="form__title">Бронирование</h1>
 			<p class="form__descr">
@@ -40,10 +42,10 @@
 
 		</section>
 		<fieldset class="datarest">
-			<span class="datarest-step">Шаг 1</span>
-			<h2 class="datarest-descr">Дата отдыха</h2>
-				<div class="datares-wrap">
-					<h4 class="datarest-title">Дата въезда</h4>
+			<span class="datarest__step">Шаг 1</span>
+			<h2 class="datarest__descr">Дата отдыха</h2>
+				<div class="datares__wrap">
+					<h4 class="datarest__title">Дата въезда</h4>
 						<div class="datarest__inp-wrap">
 							<input type="date" name="date" class="datarest__inp"/>
 							<input type="date" name="month" class="datarest__inp"/>
@@ -63,8 +65,8 @@
 		</fieldset>
 
 		<fieldset class="datarest">
-			<span class="datarest-step">Шаг 2</span>
-			<h2 class="datarest-descr">Место проживания</h2>
+			<span class="datarest__step">Шаг 2</span>
+			<h2 class="datarest__descr">Место проживания</h2>
 				<div class="data-restwrap">
 					<input type="checkbox"	name="place" class="place__block" value="Отель"/>
 					<input type="checkbox"	name="place" class="place__block" value="Коттедж" checked="checked"/>		
@@ -72,16 +74,16 @@
 		</fieldset>
 
 		<fieldset class="datarest">
-			<span class="datarest-step">Шаг 3</span>
-			<h2 class="datarest-descr">Тип коттеджа</h2>
-				<div class="kottedj__wrap">
+			<span class="datarest__step">Шаг 3</span>
+			<h2 class="datarest__descr">Тип коттеджа</h2>
+				<div class="kottedj-wrap">
 					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Флагман" checked="checred"/>
 					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Озерный"/>
 					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Ольховка"/>
 					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Портовый"/>
 				</div>
 
-				<div class="kottedj__wrap kottedj__wrap--single">
+				<div class="kottedj-wrap__single">
 					<div class="kottedj__descr"><p class="kottedj__descr__p">Площадь 100м2</p></div>
 					<div class="kottedj__descr"><p class="kottedj__descr__p">3 комнаты</p></div>
 					<div class="kottedj__descr"><p class="kottedj__descr__p">5 спальных мест</p></div>
@@ -93,7 +95,7 @@
 		</fieldset>
 
 		<fieldset class="datarest">
-			<span class="datarest-step">Шаг 4</span>
+			<span class="datarest__step">Шаг 4</span>
 				<div class="datarest__person-wrap">
 					
 						<input type="text"	name="First Name" class="personal__block" placeholder="First Name" required="required" />
@@ -107,8 +109,8 @@
 			</fieldset>
 
 			<fieldset class="datarest">
-			<span class="datarest-step">Шаг 4</span>
-				<div class="daterest-wrap">
+			<span class="datarest__step">Шаг 4</span>
+				<div class="daterest__wrap">
 					<div class="for__pay">
 						<h4 class="for__pay__h4">К оплате</h4>
 						<p class="for__pay__p">Пожалуйста, <a href="#">выберите дату</a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
@@ -137,26 +139,28 @@
 
 			<input type="submit" value="Забронировать"/>
 			</form>
+<!---------------------------------------------------------------------------------------------------->
 
-			<footer>
-				<div class="foot_inner">
-					<div class="foot_inner-float">
-						<span>С.Петербург</span>
-						<span>Приморское ш.600</span>
+			<footer class="foot">
+				<div class="foot__inner">
+					<div class="foot__wrap">
+						<span class="foot__addr">С.Петербург</span>
+						<span class="foot__addr">Приморское ш.600</span>
 					</div>
-					<div class="foot_inner-float">
+					<div class="foot__wrap">
 						<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
-						<div class="social">
-							<i class="fa"></i>
-							<i class="fa"></i>
-							<i class="fa"></i>
-						</div>
+						<ul class="social">
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							
+								
+						</ul>
 					</div>
-					<div class="foot_inner-float">
-					<span>+7 978 667 55 67</span>
-					<span>info@greenvalley.ru</span>
+					<div class="foot__wrap">
+					<a class="foot__tel">+7 978 667 55 67</a>
+					<a class="foot__mail">info@greenvalley.ru</a>
 						
-					</div>
 					</div>
 
 				</div>

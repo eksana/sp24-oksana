@@ -4,13 +4,16 @@
 	<meta charset="UTF-8">
 	<title>sp24</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
+
+<!------------------------------------------------------------------------------------------------>
 	<header class="main-header">
 			<div class="main-header__inner">
 				<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
 				<nav class="main-nav">
-					<ul class="main-nav__ul">
+					<ul class="main-nav__list">
 						<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link main-nav__link--active">Номера</a></li>
 						<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
 						<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
@@ -20,24 +23,28 @@
 					</ul>
 					</nav>
 					<div class="main-header__tel-wrap">
-						<a href="#" class="main-header__tel-wrap__tel">8-333445599</a>
-						<span class="main-header__adress>С-Петербург,  Приморское шоссе, 600</span>
+						<a href="#" class="main-header__tel">8-333445599</a>
+						<span class="main-header__adress">С-Петербург,  Приморское шоссе, 5</span>
 					</div>
 
-					
+					<a href="#" class="btn btn-icon">Забронировать</a>
 			</div>	
 		</header>
+<!-------------------------------------------------------------------------------------------------->
 
 		<section class="rooms-hotel" style="background:url();">
-					<div class="rooms-hotel-inner">
-						<h1 class="rooms-hotel__h1">Номера в отеле Green Valley</h1>
-						<p class="rooms-hotel__p">Комфорт и живописный вид на Финский залив и сосновый парк.4этажа 70 номеров </p>
+					<div class="rooms-hotel__inner">
+						<h1 class="rooms-hotel__title">Номера в отеле Green Valley</h1>
+						<p class="rooms-hotel__descr">Комфорт и живописный вид на Финский залив и сосновый парк.4этажа 70 номеров </p>
 					</div>
 		</section>
+
+<!-------------------------------------------------------------------------------->
+
 		<section class="cat">
 			<h2 class="cat__cat">Категории</h2>
 
-			<div class="cat-wrap">
+			<div class="cat__wrap">
 				
 					<article class="catdescr" style="background:url();">
 						<h3 class="catdescr__title">Эконом</h3>
@@ -48,8 +55,8 @@
 							</p>
 					
 					<div class="catdescr__wrap">
-						<a href="#" class="btn btn-bron">Забронировать</a>
-						<span class="cat-next">Подробнее</span>
+						<a href="#" class="btn btn--bron">Забронировать</a>
+						<a href="#" class="btn btn--next">Подробнее</a>
 					</div>
 					</article>
 
@@ -61,8 +68,8 @@
 							</p>
 					
 					<div class="catdescr__wrap">
-						<a href="#" class="btn btn-bron">Забронировать</a>
-						<span class="cat-next">Подробнее</span>
+						<a href="#" class="btn btn--bron">Забронировать</a>
+						<a href="#" class="btn btn--next">Подробнее</a>
 					</div>
 					</article>
 
@@ -74,8 +81,8 @@
 							</p>
 					
 					<div class="catdescr__wrap">
-						<a href="#" class="btn btn-bron">Забронировать</a>
-						<span class="cat-next">Подробнее</span>
+						<a href="#" class="btn btn--bron">Забронировать</a>
+						<a href="#" class="btn btn--next">Подробнее</a>
 					</div>
 					</article>
 
@@ -87,30 +94,34 @@
 							</p>
 					
 					<div class="catdescr__wrap">
-						<a href="#" class="btn btn-bron">Забронировать</a>
-						<span class="cat-next">Подробнее</span>
+						<a href="#" class="btn btn--bron">Забронировать</a>
+						<a href="#" class="btn btn--next">Подробнее</a>
 					</div>
 					</article>
 
 			</div>
 		</section>
-		<footer>
-				<div class="foot_inner">
-					<div class="foot_inner-float">
-						<span>С.Петербург</span>
-						<span>Приморское ш.600</span>
+
+<!------------------------------------------------------------------------------------------>
+		<footer class="foot">
+				<div class="foot__inner">
+					<div class="foot__wrap">
+						<span class="foot__addr">С.Петербург</span>
+						<span class="foot__addr">Приморское ш.600</span>
 					</div>
-					<div class="foot_inner-float">
+					<div class="foot__wrap">
 						<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
-						<div class="social">
-							<i class="fa"></i>
-							<i class="fa"></i>
-							<i class="fa"></i>
-						</div>
+						<ul class="social">
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							
+								
+						</ul>
 					</div>
-					<div class="foot_inner-float">
-					<span>+7 978 667 55 67</span>
-					<span>info@greenvalley.ru</span>
+					<div class="foot__wrap">
+					<a class="foot__tel">+7 978 667 55 67</a>
+					<a class="foot__mail">info@greenvalley.ru</a>
 						
 					</div>
 

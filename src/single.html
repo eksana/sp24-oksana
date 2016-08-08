@@ -4,15 +4,21 @@
 	<meta charset="UTF-8">
 	<title>single</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	
 	<!--@@include('_include/page_head.html')-->
 </head>
 <body>
+
+<!------------------------------------------------------------>
+
 	<header class="main-header">
 			<div class="main-header__inner">
 				<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
 				<nav class="main-nav">
-					<ul class="main-nav__ul">
+					<ul class="main-nav__list">
 						<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link main-nav__link--active">Номера</a></li>
 						<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
 						<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
@@ -22,8 +28,8 @@
 					</ul>
 					</nav>
 					<div class="main-header__tel-wrap">
-						<a href="#" class="main-header__tel-wrap__tel">8-333445599</a>
-						<span class="main-header__adress>С-Петербург,  Приморское шоссе, 5</span>
+						<a href="#" class="main-header__tel">8-333445599</a>
+						<span class="main-header__adress">С-Петербург,  Приморское шоссе, 5</span>
 					</div>
 
 					<a href="#" class="btn btn-icon">Забронировать</a>
@@ -31,7 +37,11 @@
 		</header>
 		@import '../../scss/main-header.scss'; 
 		<!--@@include('blocks/main-header/main-header.html')-->
+
+
 <!---------------------------------------------------------------------------------------->
+
+
 		<section class="cat">
 			<h2 class="cat__cat">Эконом</h2>
 			<div class="catdescr__descr">от<span class="cat--color">3400</span> руб/сутки</div>
@@ -48,20 +58,20 @@
 
 							<h3 class="cattitle__h3">Удобства</h3>
 
-							<div class="cat__list-wrap">
-								<ul class="cat__list">
-									<li class="cat__item">WI-FI</li>
-									<li class="cat__item">Двуспальная кровать</li>
-									<li class="cat__item">Кресло</li>
-									<li class="cat__item">Раскладывающийся диван</li>
-									<li class="cat__item">Фен</li>
+							<div class="catlist-wrap">
+								<ul class="catlist-wrap__list">
+									<li class="catlist-wrap__item">WI-FI</li>
+									<li class="catlist-wrap__item">Двуспальная кровать</li>
+									<li class="catlist-wrap__item">Кресло</li>
+									<li class="catlist-wrap__item">Раскладывающийся диван</li>
+									<li class="catlist-wrap__item">Фен</li>
 								</ul>
 
-								<ul class="cat__list">
-									<li class="cat__item">Рабочий стол</li>
-									<li class="cat__item">Шкаф для одежды</li>
-									<li class="cat__item">Багажная тумба</li>
-									<li class="cat__item">Сейф</li>
+								<ul class="catlist-wrap__list">
+									<li class="catlist-wrap__item">Рабочий стол</li>
+									<li class="catlist-wrap__item">Шкаф для одежды</li>
+									<li class="catlist-wrap__item">Багажная тумба</li>
+									<li class="catlist-wrap__item">Сейф</li>
 									
 								</ul>
 
@@ -85,8 +95,8 @@
 	<!---------------------------------------------------------------------------------------->
 
 			<div class="where" style="background:url();">
-				<div class="where_inner">
-					<div class="where_card">
+				<div class="where__inner">
+					<div class="where__card">
 						<img src="" alt="фото номера отеля" class="hotel">
 							<h6 class="where__h6">Cтандарт</h6>
 							<p class="descr_h6">От<span class="descr_h6--red">4000</span>в/сутки</p>
@@ -94,12 +104,12 @@
 					<div class="where_card">
 						<img src="" alt="фото номера отеля" class="hotel">
 							<h6 class="where__h6">Cтандарт+</h6>
-							<p class="descr_h6">От<span class="descr_h6--red">4500</span>в/сутки</p>
+							<p class="descrh6">От<span class="descr_h6--red">4500</span>в/сутки</p>
 					</div>
-					<div class="where_card">
+					<div class="where__card">
 						<img src="" alt="фото номера отеля" class="hotel">
 							<h6 class="where__h6">Люкс</h6>
-							<p class="descr_h6">От<span class="descr_h6--red">5700</span>в/сутки</p>
+							<p class="descrh6">От<span class="descr_h6--red">5700</span>в/сутки</p>
 					</div>
 				</div>
 			</div>
@@ -107,30 +117,31 @@
 			<!--@@include('blocks/where/where.html')-->
 	<!---------------------------------------------------------------------------------------->
 
-			<footer>
-				<div class="foot_inner">
-					<div class="foot_inner-float">
-						<span>С.Петербург</span>
-						<span>Приморское ш.600</span>
+			<footer class="foot">
+				<div class="foot__inner">
+					<div class="foot__wrap">
+						<span class="foot__addr">С.Петербург</span>
+						<span class="foot__addr">Приморское ш.600</span>
 					</div>
-					<div class="foot_inner-float">
+					<div class="foot__wrap">
 						<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
-						<div class="social">
-							<i class="fa"></i>
-							<i class="fa"></i>
-							<i class="fa"></i>
-						</div>
+						<ul class="social">
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
+							
+								
+						</ul>
 					</div>
-					<div class="foot_inner-float">
-					<span>+7 978 667 55 67</span>
-					<span>info@greenvalley.ru</span>
+					<div class="foot__wrap">
+					<a class="foot__tel">+7 978 667 55 67</a>
+					<a class="foot__mail">info@greenvalley.ru</a>
 						
 					</div>
 
 				</div>
 
 			</footer>
-			@import '../../scss/footer.scss'; 
 			<!--@@include('blocks/footer/footer.html')
 			@@include('_include/page_bottom.html')-->
 	

@@ -1,6 +1,6 @@
-.main-header__inner {
-  margin: 0 auto;
-  width: 960px;
-  height: 400px;
-  background-color: lightgreen;
+.main-nav {
+  width: 150px;
+  height: 80px;
+  background-color: #ff7435;
+  border: 2px solid #0ab89d;
 }
