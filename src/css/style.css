@@ -1,0 +1,12 @@
+.main-nav {
+  width: 150px;
+  height: 80px;
+  background-color: #ff7435;
+  border: 2px solid #0ab89d;
+}
+
+.main-logo {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
