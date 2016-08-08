@@ -1,0 +1,55 @@
+@import '../../scss/variables.scss'; 
+
+.cat__cat{
+	font-size: 20px;
+	@include centr;	
+	
+}
+
+.cat{
+	padding-bottom: 50px;
+}
+.cat__descr{
+	margin-bottom: 50px;
+
+	@include centr;
+}
+.cat__color{
+	color:$color;
+	display: inline-block;
+}
+.catdescr__wrap-single{
+	width: 100%;
+	
+	
+	@include centr;
+}
+
+.wrapforimg{
+	width: 370px;
+
+	margin-bottom: 50px;
+}
+.wrapforimg__img{
+	width: 100%;
+	height: auto;
+}
+.btn{
+	display: inline-block;
+}
+.btn{
+		@include forbtn;
+		 @include radius;
+	}
+.fa-calendar-o{
+	display: inline-block;
+	
+	font-size: 20px;
+	position: absolute;
+	top:10px;
+	left:15px;
+}
+.catdescr__descr{
+	margin-top: 30px;
+}
+
