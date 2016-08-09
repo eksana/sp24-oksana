@@ -1,0 +1,52 @@
+@import '../../scss/variables.scss'; 
+
+.slid{
+	width: 960px;
+	height:50vh;
+	border:2px solid red;
+}
+.vacation__for-family{
+	background: url(block/../../img/sl-top.jpg)no-repeat center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.vacation__title{
+	display: table;
+	background-color: #FFF;
+	line-height: 40px;
+	
+}
+.vacation__title:nth-child(2){
+	margin-top: -30px;
+}
+
+.hidden{
+@include hid;
+}
+.tabs-wrap{
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+	
+}
+
+.tabs__for-family--active{
+	color:$color;
+	
+}
+.tabs{
+	position: relative;
+}
+.tabs:nth-child(1):after{
+	@include aft;
+}
+.tabs:hover:after{
+	@include aft;
+}
+
+	
+
+.tabs__for-corp:hover{
+	color:$color;
+}

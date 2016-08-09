@@ -1,22 +1,13 @@
 
 
-/*@import 'variables.scss'; 
+@import 'variables.scss';
 
-.main-nav{
-	width:150px;
-	height:80px;
-	background-color: $color;
-	border:2px solid $gcolor;
-} 
-.main-logo{
-	width:100px;
-	height:100px;
-	background-color:$bcolor;
-}*/
+
 
 @import '../blocks/main-header/main-header.scss';
 @import '../blocks/cat/cat.scss'; 
 
 @import '../blocks/where/where.scss';
 @import '../blocks/footer/footer.scss';
+@import '../blocks/vacation/vacation.scss';
 

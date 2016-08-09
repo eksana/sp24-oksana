@@ -1,6 +1,8 @@
 @import '../../scss/variables.scss'; 
 
-
+.main-header{
+	padding-top: 50px;
+}
 
 	.btn{
 		font-size: 13px;
@@ -37,9 +39,18 @@
 }
 .main-nav__link {
 	color:#222;
+	&:hover{
+		color:$color;
+		-webkit-transition: all .5s ease;
+		   -moz-transition: all .5s ease;
+		    -ms-transition: all .5s ease;
+		     -o-transition: all .5s ease;
+		        transition: all .5s ease;
 	}
-.main-nav__link .main-nav__link--aktive{
+	}
+.main-nav__link--aktive{
 	color:$color;
+	
 }
 
 	

@@ -1,1 +1,40 @@
 @import '../../scss/variables.scss'; 
+.foot{
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	@include centr;
+	background-color:#fff;
+}
+.foot__img{
+	margin-top: -30px;
+	
+}
+.foot__wrap--left{
+	color:#222;
+	text-align: left;
+}
+.foot__tel--color,.foot__mail--color{
+	color:#222;
+}
+.social__list{
+	
+	display: inline-block;
+}
+.social__item{
+	display: inline-block;
+	
+	color: #0ab89d;
+}
+.social__list:nth-child(2){
+	margin: 0 20px;
+}
+.fa{
+	font-size: 20px;
+	
+}
+.social{
+	margin-top: 20px;
+}
+
+

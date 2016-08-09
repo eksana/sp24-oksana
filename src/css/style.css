@@ -1,17 +1,8 @@
 @charset "UTF-8";
-/*@import 'variables.scss'; 
+.main-header {
+  padding-top: 50px;
+}
 
-.main-nav{
-	width:150px;
-	height:80px;
-	background-color: $color;
-	border:2px solid $gcolor;
-} 
-.main-logo{
-	width:100px;
-	height:100px;
-	background-color:$bcolor;
-}*/
 .btn {
   font-size: 13px;
   /*  padding:17px 22px 17px 48px;*/
@@ -49,7 +40,16 @@
   color: #222;
 }
 
-.main-nav__link .main-nav__link--aktive {
+.main-nav__link:hover {
+  color: #ff7435;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.main-nav__link--aktive {
   color: #ff7435;
 }
 
@@ -116,6 +116,10 @@
   margin-top: 30px;
 }
 
+.fa.fa-angle-down {
+  color: #ff7435;
+}
+
 .where {
   width: 100%;
   padding-top: 50px;
@@ -137,4 +141,115 @@
 .where__h6 {
   font-size: 26px;
   text-align: center;
+}
+
+.foot {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.foot__img {
+  margin-top: -30px;
+}
+
+.foot__wrap--left {
+  color: #222;
+  text-align: left;
+}
+
+.foot__tel--color, .foot__mail--color {
+  color: #222;
+}
+
+.social__list {
+  display: inline-block;
+}
+
+.social__item {
+  display: inline-block;
+  color: #0ab89d;
+}
+
+.social__list:nth-child(2) {
+  margin: 0 20px;
+}
+
+.fa {
+  font-size: 20px;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.slid {
+  width: 960px;
+  height: 50vh;
+  border: 2px solid red;
+}
+
+.vacation__for-family {
+  background: url(block/../../img/sl-top.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vacation__title {
+  display: table;
+  background-color: #FFF;
+  line-height: 40px;
+}
+
+.vacation__title:nth-child(2) {
+  margin-top: -30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabs-wrap {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.tabs__for-family--active {
+  color: #ff7435;
+}
+
+.tabs {
+  position: relative;
+}
+
+.tabs:nth-child(1):after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #ff7435;
+  top: 40px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.tabs:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #ff7435;
+  top: 40px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.tabs__for-corp:hover {
+  color: #ff7435;
 }
