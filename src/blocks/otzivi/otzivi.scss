@@ -1,0 +1,68 @@
+@import '../../scss/variables.scss';
+
+.otzivi{
+	width: 100%;
+	
+	padding: 70px 0;
+	background: url(block/../../img/otz.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	text-align: center;
+}
+.otzivi__title{
+	font-size: 30px;
+	color: #FFF;
+	margin-bottom: 100px;
+}
+.cardswrap__wrapforeach{
+	width: 100%;
+	background-color: #FFF;
+	padding: 80px 40px 50px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 50px;
+	border:2px solid red;
+}
+.cardswrap__card{
+	width: 78px;
+	height: 78px;
+	position: absolute;
+	top:-30px;
+	left: 50%;
+	margin-left: -37px;
+}
+.btn--border{
+
+	border:2px solid #fff;
+	background-color: transparent;
+	padding-left: 19px;
+	
+}
+.datawrap{
+	margin-top: 20px;
+}
+
+.cardswrap__ar1{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	top:35%;
+	right:0;
+	
+	background: url(block/../../img/arr1.png)no-repeat;
+}
+
+.cardswrap__ar2{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	top:35%;
+	left:0;
+	
+	background: url(block/../../img/arl2.png)no-repeat;
+}
+.otzivi__wrap{
+	position: relative;
+	border:2px solid yellow;
+}

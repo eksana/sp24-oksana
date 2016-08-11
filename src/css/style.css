@@ -120,6 +120,108 @@
   color: #ff7435;
 }
 
+.healthy-rest__inner {
+  width: 100%;
+  text-align: center;
+  background: url(block/../../img/hrbg.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border: 2px solid red;
+}
+
+.healthy-rest {
+  width: 100%;
+}
+
+/*.healthy-rest__inner{
+	border:2px solid green;
+	margin-top: 100px;
+	width: 100%;
+	height: 150px;
+}*/
+.sm__inner {
+  border: 2px solid blue;
+  margin: 100px 0;
+  /*padding: 0 70px;
+	width: 100%;*/
+}
+
+.healthy__wrap {
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.healthy__descr {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.healthy__wrap--bass {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url(block/../../img/h1.jpg) no-repeat center;
+  border: 2px solid red;
+}
+
+.healthy__wrap--sppl {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url(block/../../img/h2.jpg) no-repeat center;
+}
+
+.healthy__wrap--bil {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url(block/../../img/h3.jpg) no-repeat center;
+}
+
+.healthy__wrap--spa {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url(block/../../img/h4.jpg) no-repeat center;
+}
+
+.healthy__wrap--bani {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url(block/../../img/h5.jpg) no-repeat center;
+}
+
+.healthy__wrap--anim {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url(block/../../img/h6.jpg) no-repeat center;
+}
+
+.healthy__descr {
+  border: 2px solid magenta;
+}
+
+.col-sm-2 {
+  border: 2px solid green;
+}
+
+.large-img {
+  width: 100%;
+  border: 2px solid red;
+}
+
+.larg__pic {
+  width: 100%;
+  height: auto;
+}
+
+.smallimg-wrap {
+  overflow: hidden;
+}
+
 .where {
   width: 100%;
   padding-top: 50px;
@@ -186,9 +288,16 @@
 }
 
 .slid {
-  width: 960px;
-  height: 50vh;
+  width: 100%;
+  height: 60vh;
   border: 2px solid red;
+}
+
+.vacation {
+  width: 100%;
+  height: 80vh;
+  padding-bottom: 50px;
+  border: 2px solid green;
 }
 
 .vacation__for-family {
@@ -252,4 +361,82 @@
 
 .tabs__for-corp:hover {
   color: #ff7435;
+}
+
+.otzivi {
+  width: 100%;
+  padding: 70px 0;
+  background: url(block/../../img/otz.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+.otzivi__title {
+  font-size: 30px;
+  color: #FFF;
+  margin-bottom: 100px;
+}
+
+.cardswrap__wrapforeach {
+  width: 100%;
+  background-color: #FFF;
+  padding: 80px 40px 50px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  border: 2px solid red;
+}
+
+.cardswrap__card {
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -37px;
+}
+
+.btn--border {
+  border: 2px solid #fff;
+  background-color: transparent;
+  padding-left: 19px;
+}
+
+.datawrap {
+  margin-top: 20px;
+}
+
+.cardswrap__ar1 {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 35%;
+  right: 0;
+  background: url(block/../../img/arr1.png) no-repeat;
+}
+
+.cardswrap__ar2 {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  background: url(block/../../img/arl2.png) no-repeat;
+}
+
+.otzivi__wrap {
+  position: relative;
+  border: 2px solid yellow;
+}
+
+.aktsii {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.aktsii__img {
+  width: 100%;
+  height: auto;
 }

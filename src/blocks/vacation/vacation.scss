@@ -1,10 +1,18 @@
 @import '../../scss/variables.scss'; 
 
 .slid{
-	width: 960px;
-	height:50vh;
+	width: 100%;
+	height:60vh;
 	border:2px solid red;
 }
+
+.vacation{
+	width: 100%;
+	height: 80vh;
+	padding-bottom: 50px;
+	border:2px solid green;
+}
+
 .vacation__for-family{
 	background: url(block/../../img/sl-top.jpg)no-repeat center;
 	-webkit-background-size: cover;
