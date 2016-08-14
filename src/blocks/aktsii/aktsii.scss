@@ -1,4 +1,4 @@
-@import '../../scss/variables.scss';
+/*@import '../../scss/variables.scss';*/
 
 .aktsii{
 	width: 100%;
@@ -7,4 +7,44 @@
 .aktsii__img{
 	width: 100%;
 	height: auto;
+	
+}
+.aktsii__label{
+	width:30%;
+	height:120px;
+	padding-top: 15px;
+	padding-left: 20px;
+	position: absolute;
+	top:40%;
+	left: 0;
+	background-color: lightgrey;
+	
+}
+.aktsii__color{
+	color:$color;
+}
+.slider1{
+	position: relative;
+}
+.aktsii__btn-inner{
+	
+	padding: 20px 0;
+	text-align: center;
+}
+.aktsii__btn{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 20px;
+	border-radius:50%;
+	border:2px solid $color;
+
+	
+
+&--active{
+	background-color: $color;
+}
+}
+.aktsii__btn:nth-child(1){
+	margin-left: 0;
 }

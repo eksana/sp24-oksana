@@ -24,13 +24,14 @@
 .social__item{
 	display: inline-block;
 	
-	color: #0ab89d;
+	
 }
 .social__list:nth-child(2){
 	margin: 0 20px;
 }
 .fa{
 	font-size: 20px;
+	color:$sotial_color;
 	
 }
 .social{

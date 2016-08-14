@@ -1,0 +1,44 @@
+
+.how{
+	background-color:$gray;
+	padding: 80px 0 70px;
+}
+.aktsii__title{
+	font-size: 20px;
+	text-align: center;
+	
+	
+}
+.map{
+	width: 100%;
+	height: 300px;
+	margin-top: 40px;
+	background:url(../img/map.jpg)no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.aktsii__single{
+	margin-top: 70px;
+	text-align: center;
+	font-size: 14px;
+	font-family: Fira Sans;
+	
+}
+.aktsii__bus{
+	padding-top: 40px;
+	
+}
+.aktsii__busdescr{
+	margin-top: 30px;
+}
+.aktsii__single--bus{
+	background: url(../img/bus.png)no-repeat;
+	background-position: center top;
+	
+}
+.aktsii__single--electro{
+	background: url(../img/electro.png)no-repeat;
+	background-position: center top;
+}
+
