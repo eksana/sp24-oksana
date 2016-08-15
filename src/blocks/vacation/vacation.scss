@@ -4,13 +4,20 @@
 	width: 100%;
 	height:60vh;
 	border:2px solid red;
+	padding-top: 60px;
 }
 
 .vacation{
 	width: 100%;
 	height: 80vh;
 	padding-bottom: 50px;
+	
 	border:2px solid green;
+}
+.vacation__p{
+	display: table;
+	background-color: #FFF;
+	line-height: 24px;
 }
 
 .vacation__for-family{
@@ -37,6 +44,10 @@
 	margin-top: 30px;
 	position: relative;
 	
+	
+}
+.tabs{
+	margin-left:30px;
 }
 
 .tabs__for-family--active{
@@ -45,6 +56,7 @@
 }
 .tabs{
 	position: relative;
+	
 }
 .tabs:nth-child(1):after{
 	@include aft;

@@ -1,22 +1,45 @@
 @import '../../scss/variables.scss'; 
 
 .main-header{
-	padding-top: 50px;
+	padding:30px 0;
 }
 
-	.btn{
+	.mybtn{
 		font-size: 13px;
-		/*  padding:17px 22px 17px 48px;*/
 		
+		width: 100%;
 		height:40px;
 		background-color: $color;
 		color: #FFF;
 		display: inline-block;
 		padding-top: 10px;
-		padding-left: 48px;
+		padding-left: 38px;
 		padding-right: 20px;
 		position: relative;
 		 @include radius;
+	}
+	.main-logo{
+		display: inline-block;
+		
+	}
+	.logo-img{
+		width: 100%;
+		margin-right: 30px;
+	}
+
+	.main-nav{
+		width: 100%;
+		height: 56px;
+	}
+	.main-nav__list{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+	}
+	.main-nav__item{
+		display: inline-block;
+		line-height: 56px;
+		padding: 0 7px;
 	}
 .main-header__tel{
 	display: inline-block;
@@ -27,25 +50,26 @@
 }
 .main-header__adress{
 	font-size: 14px;
-	font-family: Fira Sana, san-serif;
+	font-family: Fra Sans, sans-serif;
 }
 .fa-calendar-o{
 	display: inline-block;
 	
-	font-size: 20px;
+	font-size: 13px;
 	position: absolute;
 	top:10px;
-	left:15px;
+	left:6px;
 }
+
 .main-nav__link {
 	color:#222;
 	&:hover{
 		color:$color;
-		-webkit-transition: all .5s ease;
-		   -moz-transition: all .5s ease;
-		    -ms-transition: all .5s ease;
-		     -o-transition: all .5s ease;
-		        transition: all .5s ease;
+		-webkit-transition: all .3s ease;
+		   -moz-transition: all .3s ease;
+		    -ms-transition: all .3s ease;
+		     -o-transition: all .3s ease;
+		        transition: all .3s ease;
 	}
 	}
 .main-nav__link--aktive{

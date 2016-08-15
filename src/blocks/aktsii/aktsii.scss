@@ -48,3 +48,16 @@
 .aktsii__btn:nth-child(1){
 	margin-left: 0;
 }
+.slider1{
+	width: 100%;
+	height: 400px;
+	background: url(../img/aktsii1.jpg)no-repeat;
+}
+.slider2{
+	width: 100%;
+	height: 400px;
+	background: url(../img/aktsii2.jpg)no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
