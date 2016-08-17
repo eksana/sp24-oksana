@@ -1,0 +1,58 @@
+.form__descr--color{
+	color:$color;
+}
+.form__bron{
+	width: 100%;
+	text-align: center;
+	padding: 80px 0 50px;
+	border-top: 1px solid lightgrey;
+}
+.form__title{
+	margin-bottom: 30px;
+}
+.d-one{
+	width: 100%;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+.datarest__descr{
+	font-size: 26px;
+	margin-bottom: 24px;
+}
+.datarest{
+	padding-top: 60px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+.datarest__step{
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+.datares__wrap{
+	width: 400px;
+	height: 150px;
+	margin: 0 auto;
+	background-color: #FFF;
+	padding-bottom: 50px;
+	padding-top: 30px;
+	
+}
+.datarest__title{
+	margin-bottom: 22px;
+}
+.datarest__inp{
+	display: inline-block;
+	width: 50px;
+	font-size: 14px;
+	color: $sotial_color;	
+}
+
+.datarest__wrapforeach{
+	
+	float:left;
+	padding:0 20px 30px;
+	
+}
+.dborder{
+	border-right: 1px solid #f1f1f1;
+}

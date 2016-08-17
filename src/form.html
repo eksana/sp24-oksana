@@ -3,17 +3,27 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>sp24</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
 		<!--<link rel="stylesheet" href="css/reset.css">-->
 		<link rel="stylesheet" href="css/style.css">
 		
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="main-header__inner">
-				<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
+			<div class="main-header__inner ">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+				<a href="index.html" class="main-logo"><img src="img/logo.svg" alt="логотип фирмы 'Отдых'" class="logo-img"></a>
+				</div>
+
+				<div class="col-sm-5">
 				<nav class="main-nav">
 					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link main-nav__link--active">Номера</a></li>
+						<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link  main-nav__link--aktive">Номера</a></li>
 						<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
 						<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
 						<li class="main-nav__item"><a href="index.html" class="main-nav__link">Отдых</a></li>
@@ -21,56 +31,97 @@
 					
 					</ul>
 					</nav>
+					</div>
+					<div class="col-sm-3">
 					<div class="main-header__tel-wrap">
-						<a href="#" class="main-header__tel">8-333445599</a>
+						<a href="form.html" class="main-header__tel">8 333 445-59-97</a><br/>
 						<span class="main-header__adress">С-Петербург,  Приморское шоссе, 5</span>
 					</div>
-
-					<a href="#" class="btn btn-icon">Забронировать</a>
+					</div>
+					<div class="col-sm-2">
+					<div class="butwrap">
+					<a href="#" class="mybtn mybtn-icon"><i class="fa fa-calendar-o mybtn-fa" aria-hidden="true"></i>Забронировать</a>
+					</div>
+					</div>
+			</div>
+			</div>
 			</div>	
+
 		</header>
+		
+		<!--@@include('blocks/main-header/main-header.html')-->
+
 <!-------------------------------------------------------------------------------------------->
 		<form action="kode.php" method="post" class="form">
 			<div class="form__wrap">
 
 
 		<section class="form__bron">
+
+			<div class="container">
+					<div class="col-sm-12">
+						<div class="row">
+
 			<h1 class="form__title">Бронирование</h1>
 			<p class="form__descr">
-				Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните
-				по телефону: <a href="#" class="form__link">+7 812 777-55-88</a>
+				Чтобы забронировать номер в отеле или коттедж<br>, заполните форму ниже или просто позвоните<br>
+				по телефону: <span class="form__descr form__descr--color">+7 812 777-55-88</span>
 			</p>
+			</div>
+			</div>
+			</div>
 
 		</section>
-		<section class="datarest">
+
+<!-- -------------------------------------------------------------------------------------------- -->
+		<section class="datarest d-one">
+			<div class="container">
+					
+
+
 			<span class="datarest__step">Шаг 1</span>
 			<h2 class="datarest__descr">Дата отдыха</h2>
 				<div class="datares__wrap">
+			
+					
+						<div class="datarest__wrapforeach dborder">
 					<h4 class="datarest__title">Дата въезда</h4>
 						<div class="datarest__inp-wrap">
-							<input type="date" name="date" class="datarest__inp"/>
-							<input type="date" name="month" class="datarest__inp"/>
-							<input type="date" name="year" class="datarest__inp"/>
+							<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
+							<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
+							<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
 							
 						</div>
+					</div>
+					
+						
+						<div class="datarest__wrapforeach">	
 
 						<h4 class="datarest__title">Дата выезда</h4>
 						<div class="datares-wrap">
-							<div class="tbl">ДД</div>
-							<div class="tbl">ММ</div>
-							<div class="tbl">ГГГГ</div>
+							<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
+							<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
+							<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
 						</div>
-
+						
+					</div>
 				</div>
+
+				
+			</div>
+			</div>
 			
 		</section>
+<!-- ------------------------------------------------------------------------------------- -->
 
 		<section class="datarest">
 			<span class="datarest__step">Шаг 2</span>
 			<h2 class="datarest__descr">Место проживания</h2>
+				<div class="container">
 				<div class="data-restwrap">
 					<input type="checkbox"	name="place" class="place__block" value="Отель"/>
 					<input type="checkbox"	name="place" class="place__block" value="Коттедж" checked="checked"/>		
+				</div>
 				</div>
 		</section>
 

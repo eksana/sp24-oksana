@@ -1,5 +1,6 @@
 
-
+@import 'reset.scss';
+@import 'bootstrap-grid.scss';
 @import 'variables.scss';
 
 
@@ -13,7 +14,7 @@
 @import '../blocks/vacation/vacation.scss';
 @import '../blocks/otzivi/otzivi.scss';
 @import '../blocks/aktsii/aktsii.scss';
-@import 'reset.scss';
-@import 'bootstrap-grid.scss';
+
 @import '../blocks/how/how.scss';
+@import '../blocks/formbron/formbron.scss';
 
