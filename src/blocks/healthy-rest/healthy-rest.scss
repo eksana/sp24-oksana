@@ -121,6 +121,9 @@
 .smallimg-wrap{
 	overflow: hidden;
 }
+.fotorama{
+	position: relative;
+}
 
 .descr-Flagman{
 	background-color: #222;
@@ -145,7 +148,9 @@
 .f-container{
 	display: table;
 	width: 100%;
-	
+	position: absolute;
+	top:30%;
+	left: 0;
 	text-align: center;
 	
 }

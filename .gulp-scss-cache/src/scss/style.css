@@ -1540,6 +1540,9 @@ sandvich-end----------------------------------------*/
 .smallimg-wrap {
   overflow: hidden; }
 
+.fotorama {
+  position: relative; }
+
 .descr-Flagman {
   background-color: #222;
   color: #FFF; }
@@ -1558,6 +1561,9 @@ sandvich-end----------------------------------------*/
 .f-container {
   display: table;
   width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 0;
   text-align: center; }
 
 .f-title {
@@ -1811,6 +1817,7 @@ sandvich-end----------------------------------------*/
 
 .cardswrap__wrapforeach {
   width: 100%;
+  margin-top: 50px;
   background-color: #FFF;
   padding: 80px 40px 50px;
   text-align: center;
