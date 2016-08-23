@@ -1,0 +1,25 @@
+{
+  "name": "sp24-oksana",
+  "version": "1.0.0",
+  "description": "epixx",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eksana/sp24-oksana.git"
+  },
+  "author": "Oksana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eksana/sp24-oksana/issues"
+  },
+  "homepage": "https://github.com/eksana/sp24-oksana#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss": "^1.4.0"
+  }
+}

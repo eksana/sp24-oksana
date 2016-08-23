@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>sp24</title>
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sp24</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
 	<!--<link rel="stylesheet" href="css/reset.css">-->
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.css" rel="stylesheet">
 	
 	<!--<link rel="stylesheet" href="css/bootstrap-grid.min.css">-->
-		<link rel="stylesheet" href="css/style.css">
-
-		<!--@@include('_include/page_head.html')-->
-	</head>
-	<body>
-<!------------------------------------------------------------------------------------------------------>
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--@@include('_include/page_head.html')-->
+</head>
+<body>
+	<!------------------------------------------------------------------------------------------------------>
+	
 		<!--<header class="main-header">
 			<div class="main-header__inner">
 				<a href="#" class="main-logo"><img src="img/logo.svg" alt="логотип фирмы 'Отдых'"></a>
@@ -41,43 +44,64 @@
 		</header>-->
 
 		<header class="main-header">
-			<div class="main-header__inner ">
+			<!--<div class="main-header__inner">-->
 			<div class="container">
+
 				<div class="row">
 					<div class="col-sm-2">
-				<a href="index.html" class="main-logo"><img src="img/logo.svg" alt="логотип фирмы 'Отдых'" class="logo-img"></a>
+						<a href="index.html" class="main-logo">
+							<img src="img/logo.svg" alt="логотип фирмы 'Отдых'" class="logo-img">
+						</a>
+					</div>
+
+					<div class="col-sm-5">
+						<nav class="main-nav">
+							<ul class="main-nav__list">
+								<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link  main-nav__link--aktive">Номера</a></li>
+								<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
+								<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
+								<li class="main-nav__item"><a href="index.html" class="main-nav__link">Отдых</a></li>
+								<li class="main-nav__item"><a href="form.html" class="main-nav__link">Контакты</a></li>
+								<!--<div class="effect"></div>-->
+
+							</ul>
+						</nav>
+						<div class="main-nav--cross">x</div>
+
+							<!--<button class="toggle_mnu">
+					<span class="sandwich">
+						<span class="sw-topper"></span>
+						<span class="sw-bottom"></span>
+						<span class="sw-footer"></span>
+					</span>
+				</button>-->
+				<nav class="new-nav">
+					<li class="new-nav__item"><a href="single.html" class="new-nav__link">Коттедж</a></li>
+					<li class="new-nav__item"><a href="#" class="new-nav__link">Ресторан</a></li>
+					<li class="new-nav__item"><a href="index.html" class="new-nav__link">Отдых</a></li>
+					<li class="new-nav__item"><a href="form.html" class="new-nav__link">Контакты</a></li>
+				</nav>
+			</div>
+
+
+			<div class="col-sm-3">
+				<div class="main-header__tel-wrap">
+					<a href="form.html" class="main-header__tel">8 333 445-59-97</a><br/>
+					<span class="main-header__adress">С-Петербург,  Приморское шоссе, 5</span>
 				</div>
-
-				<div class="col-sm-5">
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link  main-nav__link--aktive">Номера</a></li>
-						<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
-						<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
-						<li class="main-nav__item"><a href="index.html" class="main-nav__link">Отдых</a></li>
-						<li class="main-nav__item"><a href="form.html" class="main-nav__link">Контакты</a></li>
-					
-					</ul>
-					</nav>
-					</div>
-					<div class="col-sm-3">
-					<div class="main-header__tel-wrap">
-						<a href="form.html" class="main-header__tel">8 333 445-59-97</a><br/>
-						<span class="main-header__adress">С-Петербург,  Приморское шоссе, 5</span>
-					</div>
-					</div>
-					<div class="col-sm-2">
-					<div class="butwrap">
+			</div>
+			<div class="col-sm-2">
+				<div class="butwrap">
 					<a href="#" class="mybtn mybtn-icon"><i class="fa fa-calendar-o mybtn-fa" aria-hidden="true"></i>Забронировать</a>
-					</div>
-					</div>
+				</div>
 			</div>
-			</div>
-			</div>	
+		</div>
+	</div>
+	<!--</div>	-->
 
-		</header>
-		
-		<!--@@include('blocks/main-header/main-header.html')-->
+</header>
+
+<!--@@include('blocks/main-header/main-header.html')-->
 
 <!------------------------------------------------------------------------------------------------>
 
@@ -112,45 +136,46 @@
   	</ul>-->
 
   	<div class="vacation">
-		<section class="vacation__for-family slid">
+  		<section class="vacation__for-family slid">
 
-  				<div class="vacation__inner">
+  			<div class="vacation__inner">
   				<div class="container">
-  				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="vacation__title">Семейный отдых на берегу</h1><h1 class="vacation__title"> Финского залива</h1>
-						<p class="vacation__p">Green Valley - это современная база отдыха</p><p class="vacation__p"> в курортном районе для здорового отдыха всей семьей</p>
-				</div>
-				</div>
-				</div>
-				</div>
+  					<div class="row">
+  						<div class="col-sm-12">
+  							<h1 class="vacation__title">Семейный отдых на берегу</h1><h1 class="vacation__title"> Финского залива</h1>
+  							<p class="vacation__p">Green Valley - это современная база отдыха</p><p class="vacation__p"> в курортном районе для здорового отдыха всей семьей</p>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
 
-		</section>
-			
-				
-				<section class="vacation__for-corpor slid hidden">
-					<div class="vacation__inner">
-						<h1 class="vacation__tytle">Коропоративный отдых на берегу Финского залива</h1>
-						<p class="vacation__p">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьей</p>
-					</div>
-				</section>
-			
-		
-			<div class="container">
-  				<div class="row">
-					<div class="col-sm-12">
-						<div class="tabs-wrap">
-							<span class="tabs tabs__for-family--active">Семейный отдых</span>
-							<span class="tabs tabs__for-corp">Корпоративный</span>
-			
-						</div>
+  		</section>
 
-					</div>
-				</div>
-			</div>
 
-</div>
-		
+  		<section class="vacation__for-corpor slid hidden">
+  			<div class="vacation__inner">
+  				<h1 class="vacation__tytle">Коропоративный отдых на берегу Финского залива</h1>
+  				<p class="vacation__p">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьей</p>
+  			</div>
+  		</section>
+
+
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-sm-12">
+  					<div class="tabs-wrap">
+  						<span class="tabs tabs__for-family--active">Семейный отдых</span>
+  						<span class="tabs tabs__for-corp">Корпоративный</span>
+  						<div class="effect"></div>
+
+  					</div>
+
+  				</div>
+  			</div>
+  		</div>
+
+  	</div>
+
 		<!--<ul class="promo__tabs">
   		<li class="promo__tab"><a href=""></a></li>
   		<li class="promo__tab"><a href=""></a></li>
@@ -158,500 +183,551 @@
 
 
   	<!---------------------------------------------------------------------------------------------------->
-		
 
-		
-		<section class="healthy-rest">
-			<div class="healthy-rest__inner">
-		<div class="container">
-					<h1 class="healthy-rest__tytle">Здоровый отдых</h1>
-					<p class="healthy-rest__p">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых</p>
+
+
+  	<section class="healthy-rest">
+  		<div class="healthy-rest__inner">
+  			<div class="container">
+  				<h1 class="healthy-rest__tytle">Здоровый отдых</h1>
+  				<p class="healthy-rest__p">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых</p>
+
+  			</div>
+
+  			<div class="container clearfix">
+  				<div class="row">
+
+  					<div class="sm__inner clearfix">
+  						<div class="col-sm-2">
+
+  							<div class="healthy__wrap healthy__wrap--bass"></div>
+  							<p class="healthy__descr">Бассейн</p>
+
+
+  						</div>
+
+  						<div class="col-sm-2">
+  							<div class="healthy__wrap healthy__wrap--sppl">	</div>
+  							<p class="healthy__descr">Спортивная площадка</p>
+  						</div>
+
+  						<div class="col-sm-2">
+  							<div class="healthy__wrap healthy__wrap--bil"></div>
+  							<p class="healthy__descr">Бильярд</p>
+  						</div>
+
+
+
+  						<div class="col-sm-2">
+  							<div class="healthy__wrap healthy__wrap--spa"></div>
+  							<p class="healthy__descr">Спа</p>
+  						</div>
+
+
+
+  						<div class="col-sm-2">
+  							<div class="healthy__wrap healthy__wrap--bani"></div>
+  							<p class="healthy__descr">Бани</p>
+  						</div>
+
+
+  						<div class="col-sm-2">
+  							<div class="healthy__wrap healthy__wrap--anim"></div>
+  							<p class="healthy__descr">Анимация</p>
+  						</div>
+
+
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+
+  		<!-------------------------------------------------------------------->		
+
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-sm-12">
+
+  				<!--<div class="fotorama" data-nav="thumbs">
+
+  <img src="img/L1.jpg" width="204" height="94" data-caption="Коттедж: Флагман Вид на Финский залив, 3 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи Забронировать">
+
+  <img src="img/L2.jpg" width="204" height="94">
+  
+  <img src="img/L3.jpg" width="204" height="94">
+  <img src="img/k4.jpg" width="204" height="94">
+  <img src="img/k5.jpg" width="204" height="94">
+  <img src="img/k6.jpg" width="204" height="94">
+  <img src="img/k7.jpg" width="204" height="94">
+</div>-->
+
+<div class="fotorama" data-nav="thumbs">
+	<div data-img="img/L1.jpg">
+		<div class="f-container">
+
+
+			<h3 class="f-title">Коттедж: "Флагман"</h3>
+
+
+			<p class="f-descr">Вид на Финский залив, 3 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи.</p>
+
+
+
+			<a href="form.html" class="f-but">
+				Забронировать этот коттедж
+			</a>
+
+		</div>
+</div>
+		<div data-img="img/L2.jpg">
+			<div class="container">
+				<div class="descr-Flagman">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="descr__descr">
+								<h3 class="descr__title-h3">Коттедж: "Флагман"</h3>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="descr__descr">
+								<p class="descr__descr-p">Вид на Финский залив, 3 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи.</p>
+							</div>
+						</div>
+
+						<div class="col-sm-2">
+							<div class="descr__descr">
+								<a href="form.html" class="descr__but">
+									Забронировать этот коттедж
+								</a>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div data-img="img/L3.jpg"><em>Three</em></div>
+
+
+	</div>
+
+
 
 </div>
+</div>
+</div>
 
-		<div class="container clearfix">
-  				<div class="row">
-					
-					<div class="sm__inner clearfix">
+<!------------------------------------------------------------------------------>		
+<div class="container clearfix">
+	<div class="descr-Flagman">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="descr__descr">
+					<h3 class="descr__title-h3">Коттедж: "Флагман"</h3>
+				</div>
+			</div>
+			<div class="col-sm-7">
+				<div class="descr__descr">
+					<p class="descr__descr-p">Вид на Финский залив, 3 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи.</p>
+				</div>
+			</div>
+
 			<div class="col-sm-2">
-			
-				<div class="healthy__wrap healthy__wrap--bass"></div>
-					<p class="healthy__descr">Бассейн</p>
-				
-				
+				<div class="descr__descr">
+					<a href="form.html" class="descr__but">
+						Забронировать этот коттедж
+					</a>
 				</div>
-			
-				<div class="col-sm-2">
-				<div class="healthy__wrap healthy__wrap--sppl">	</div>
-					<p class="healthy__descr">Спортивная площадка</p>
 			</div>
-			
-				<div class="col-sm-2">
-				<div class="healthy__wrap healthy__wrap--bil"></div>
-					<p class="healthy__descr">Бильярд</p>
+
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container clearfix">
+	<div class="descr-Flagman Flagman2">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="descr__descr">
+					<h3 class="descr__title-h3">Коттедж: "Флагман2"</h3>
 				</div>
-				
-
-
-				<div class="col-sm-2">
-				<div class="healthy__wrap healthy__wrap--spa"></div>
-					<p class="healthy__descr">Спа</p>
+			</div>
+			<div class="col-sm-7">
+				<div class="descr__descr">
+					<p class="descr__descr-p">Вид на Финский залив, 2 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи.</p>
 				</div>
-				
+			</div>
 
-
-				<div class="col-sm-2">
-				<div class="healthy__wrap healthy__wrap--bani"></div>
-					<p class="healthy__descr">Бани</p>
+			<div class="col-sm-2">
+				<div class="descr__descr">
+					<a href="form.html" class="descr__but">
+						Забронировать этот коттедж
+					</a>
 				</div>
-				
+			</div>
 
-				<div class="col-sm-2">
-				<div class="healthy__wrap healthy__wrap--anim"></div>
-					<p class="healthy__descr">Анимация</p>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container clearfix">
+	<div class="descr-Flagman Flagman3">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="descr__descr">
+					<h3 class="descr__title-h3">Коттедж: "Флагман3"</h3>
 				</div>
-				
-		
- </div>
- </div>
- </div>
- </div>
-
-
-	<!-------------------------------------------------------------------->		
-
-			<div class="container">
-			  			<div class="row">
-			  				<div class="col-sm-12">
-
-			<div class="large-img">
-				
+			</div>
+			<div class="col-sm-7">
+				<div class="descr__descr">
+					<p class="descr__descr-p">Вид на Финский залив, 4 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи.</p>
+				</div>
 			</div>
 
-						</div>
-					</div>
-			</div>
-
-			<div class="container">
-			  			<div class="row">
-			  				<div class="col-sm-12">
-
-			<div class="large-img2">
-				
-			</div>
-
-						</div>
-					</div>
-			</div>
-
-			<div class="container">
-			  			<div class="row">
-			  				<div class="col-sm-12">
-
-			<div class="large-img3">
-				
-			</div>
-
-						</div>
-					</div>
-			</div>
-
-	<!------------------------------------------------------------------------------>		
-				<div class="container clearfix">
-				<div class="descr-Flagman">
-			  			<div class="row">
-			  				<div class="col-sm-3">
-			  				<div class="descr__descr">
-			  					<h3 class="descr__title-h3">Коттедж: "Флагман"</h3>
-			  				</div>
-			  				</div>
-			  				<div class="col-sm-7">
-			  				<div class="descr__descr">
-			  					<p class="descr__descr-p">Вид на Финский залив, 3 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи.</p>
-			  				</div>
-			  				</div>
-			  				
-			  				<div class="col-sm-2">
-			  				<div class="descr__descr">
-			  				<a href="form.html" class="descr__but">
-			  					Забронировать этот коттедж
-			  				</a>
-			  				</div>
-			  				</div>
-			  				
-
-			  			</div>
-			  	</div>
+			<div class="col-sm-2">
+				<div class="descr__descr">
+					<a href="form.html" class="descr__but">
+						Забронировать этот коттедж
+					</a>
+				</div>
 			</div>
 
 
-			<div class="container clearfix">
-				<div class="descr-Flagman Flagman2">
-			  			<div class="row">
-			  				<div class="col-sm-3">
-			  				<div class="descr__descr">
-			  					<h3 class="descr__title-h3">Коттедж: "Флагман2"</h3>
-			  				</div>
-			  				</div>
-			  				<div class="col-sm-7">
-			  				<div class="descr__descr">
-			  					<p class="descr__descr-p">Вид на Финский залив, 2 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи.</p>
-			  				</div>
-			  				</div>
-			  				
-			  				<div class="col-sm-2">
-			  				<div class="descr__descr">
-			  				<a href="form.html" class="descr__but">
-			  					Забронировать этот коттедж
-			  				</a>
-			  				</div>
-			  				</div>
-			  				
-
-			  			</div>
-			  	</div>
-			</div>
-
-
-			<div class="container clearfix">
-				<div class="descr-Flagman Flagman3">
-			  			<div class="row">
-			  				<div class="col-sm-3">
-			  				<div class="descr__descr">
-			  					<h3 class="descr__title-h3">Коттедж: "Флагман3"</h3>
-			  				</div>
-			  				</div>
-			  				<div class="col-sm-7">
-			  				<div class="descr__descr">
-			  					<p class="descr__descr-p">Вид на Финский залив, 4 просторные комнаты, комфортная мебель, индивидуальная ванная комната - все для отличного отдыха всей семьи.</p>
-			  				</div>
-			  				</div>
-			  				
-			  				<div class="col-sm-2">
-			  				<div class="descr__descr">
-			  				<a href="form.html" class="descr__but">
-			  					Забронировать этот коттедж
-			  				</a>
-			  				</div>
-			  				</div>
-			  				
-
-			  			</div>
-			  	</div>
-			</div>
+		</div>
+	</div>
+</div>
 
 
 
 <!---------------------------------------------------------------------------->
-		<div class="container">
-				<div class="smallimg-wrap">
-			  			<div class="row">
-			  							
-
-			 				<div class="col-sm-1">	
-						<div class="smallimg__wrap">
-							<img  src="img/k1.jpg" class="imginnerf">
-							</div>
-							</div>
-
-							<div class="col-sm-2">	
-							<div class="smallimg__wrap">
-									<img  src="img/k2.jpg" class="imginner">
-
-							</div>
-							</div>
-
-							<div class="col-sm-2">	
-							<div class="smallimg__wrap">	
-									<img  src="img/k3.jpg" class="imginner">
-
-							</div>
-							</div>
-
-							
-
-							<div class="col-sm-2">	
-							<div class="smallimg__wrap">	
-									<img  src="img/k4.jpg" class="imginner">
-
-							</div>
-							</div>
-
-							<div class="col-sm-2">	
-							<div class="smallimg__wrap">	
-									<img  src="img/k5.jpg" class="imginner">
-
-							</div>
-							</div>
-							
-
-							<div class="col-sm-2">	
-							<div class="smallimg__wrap">	
-									<img  src="img/k6.jpg" class="imginner">
-
-							</div>
-							</div>
-							
-							<div class="col-sm-1">	
-							<div class="smallimg__wrap">	
-									<img  src="img/k7.jpg" class="imginnerf">
-
-							</div>
-							</div>
+  		<!--<div class="container">
+  			<div class="smallimg-wrap">
+  				<div class="row">
 
 
-							</div> 
-									 
-									
-							
-								
-									
-								
-							</div>
-						</div>
-				
-		
-		</section>	
+  					<div class="col-sm-1">	
+  						<div class="smallimg__wrap">
+  							<img  src="img/k1.jpg" class="imginnerf">
+  						</div>
+  					</div>
 
-		<!-------------------------------------------------------------------------------------------->
+  					<div class="col-sm-2">	
+  						<div class="smallimg__wrap">
+  							<img  src="img/k2.jpg" class="imginner">
 
-			<section class="otzivi">
-				
-					<h2 class="otzivi__title">Отзывы</h2>
-					<div class="otzivi__wrap">
-						<div class="cardswrap__ar1"></div>
-						<div class="cardswrap__ar2"></div>
+  						</div>
+  					</div>
 
-					<div class="container clearfix">
-						<div class="row">
-							<div class="col-sm-6">
+  					<div class="col-sm-2">	
+  						<div class="smallimg__wrap">	
+  							<img  src="img/k3.jpg" class="imginner">
 
-					
-									
-						
-							<div class="cardswrap__wrapforeach">
-							
-						<img src="img/a1.jpg" alt="" class="cardswrap__card cardswrap__card--feedback1">
-						<p class="cardswrap__name">Екатерина В.</p>
-							<i class="fa fa-vk" aria-hidden="true"></i>
-
-							<p class="cardswrap__p">Наша семья счастлива, что открыла для себя Green Valley. Замечательный комфортный, отдых. Хорошие места, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
-
-							<div class="datawrap">
-							<span class="datawrap__otziv-title">Дата отдыха</span><br/>
-							<span class="datawrap__otziv-date">23.12.2007</span>		
-							</div>
-						</div>
-
-						</div>
-
-						<div class="col-sm-6">
-						<div class="cardswrap__wrapforeach">
-						
-						<img src="img/a2.jpg" alt="" class="cardswrap__card cardswrap__card--feedback1">
-						<p class="cardswrap__name">Екатерина В.</p>
-							<i class="fa fa-facebook-square" aria-hidden="true"></i>
-
-							<p class="cardswrap__p">Наша семья счастлива, что открыла для себя Green Valley. Замечательный комфортный, отдых. Хорошие места, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
-							<div class="datawrap">
-							<span class="datawrap__otziv-title">Дата отдыха</span><br/>
-							<span class="datawrap__otziv-date">23.12.2007</span>		
-							</div>
-						</div>
-
-						</div>
-					</div>
-					</div>
-					
-					<a href="#" class="btn btn--border">все отзывы</a>
-				
-			</section>
-
-<!---------------------------------------------------------------------------------------------------->
-
-			<section class="aktsii">
-
-			<div class="container">
-						<div class="row">
+  						</div>
+  					</div>
 
 
-							<div class="col-sm-12">
 
-				<div class="aktsii__inner">
-					<div class="aktsii__slider slider1">
-					<div class="aktsii__label label1">
+  					<div class="col-sm-2">	
+  						<div class="smallimg__wrap">	
+  							<img  src="img/k4.jpg" class="imginner">
 
-							<h5 class="aktsii__color">Скидки в мае</h5>
-							<p>Забронируйте номер или коттедж любой<br/> категории до 31 июня и получите<br/> скидку 10%</p>
-						</div>
-					<!--<img src="img/aktsii1.jpg" class="aktsii__img">-->
-						
-					</div>
-					</div>
-					</div>
-					</div>
+  						</div>
+  					</div>
 
+  					<div class="col-sm-2">	
+  						<div class="smallimg__wrap">	
+  							<img  src="img/k5.jpg" class="imginner">
 
-					<div class="container">
-					<div class="row">
-					<div class="col-sm-12 hidden-lg hidden-md hidden-sm hidden-xs">
-						
-					<div class="aktsii__slider slider2">
-						<!--<img src="img/aktsii2.jpg" class="aktsii__img">-->
-						<div class="aktsii__label label1">
-							<h5 class="aktsii__color">Скидки в мае</h5>
-							<p>Забронируйте номер или коттедж любой<br/> категории до 31 июня и получите<br/>скидку 10%</p>
-						</div>
-					</div>
-					</div>
-					</div>
-					</div>
-
-					<div class="container">
-					<div class="row">
-					<div class="col-sm-12">
-						
-						<div class="aktsii__btn-inner">
-							<span class="aktsii__btn aktsii__btn--active"></span>
-							<span class="aktsii__btn"></span>
-						</div>
-					</div>
-					</div>
-					</div>
-			
-				</div>	
-			</section>
-<!------------------------------------------------------------------------------>
+  						</div>
+  					</div>
 
 
-			<section class="how">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">	
-		<h2 class="aktsii__title">Как до нас добраться</h2>
-			<div class="map"></div>
+  					<div class="col-sm-2">	
+  						<div class="smallimg__wrap">	
+  							<img  src="img/k6.jpg" class="imginner">
+
+  						</div>
+  					</div>
+
+  					<div class="col-sm-1">	
+  						<div class="smallimg__wrap">	
+  							<img  src="img/k7.jpg" class="imginnerf">
+
+  						</div>
+  					</div>
 
 
-			
-			</div>
-			</div>
-			</div>
-
-				
-			<div class="container">
-			<div class="aktsii__wraptransport">
-						<div class="row">
+  				</div> 
 
 
-							<div class="col-sm-6">	
-
-			
-				<div class="aktsii__single aktsii__single--bus">
-				
-				<h5 class="aktsii__bus">Автобусы</h5>
-				<p class="aktsii__busdescr">
-				№ 211 от станции метро "Черная речка".<br/>
-				№ 211 от станции метро "Черная речка".<br/>
-				№ 211 от станции метро "Черная речка".<br/>
-				№ 211 от станции метро "Черная речка".<br/>
 
 
-				</p>
-				</div>
-				</div>
 
 
-				<div class="col-sm-6">	
-				<div class="aktsii__single aktsii__single--electro">
-				
-				<h5 class="aktsii__bus">Электропоезда</h5>
-				<p class="aktsii__busdescr">
-					Электропоезд Выборгского направления<br/> от Финляндского вокзала Санкт-Петербурга<br/> до платформы "Репино".
-
-				</p>
-				</div>
-			</div>
-			</div>
-			</div>
-			</div>
+  			</div>
+  		</div>
 
 
-			</section>	
+  	</section>	-->
 
-<!---------------------------------------------------------------------------------------------->
+  	<!-------------------------------------------------------------------------------------------->
 
-			<section class="where-index">
-				<div class="container">
-				<div class="where-index_inner">
-				<h2 class="where-index__mtitle">Как до нас добраться</h2>
-				<div class="row">
-					<div class="col-sm-6">	
-				
-					<div class="where-index__card">
-						<img src="img/hot.jpg" alt="фото номера отеля" class="hotel">
-							<h6 class="where-index__title">В отеле</h6>
-							<p class="where-index__descr">От<span class="where-index__color"> 4000 </span>в/сутки</p>
-					</div>
-					</div>
-					<div class="col-sm-6">	
+  	<section class="otzivi">
 
-					<div class="where-index__card">
-						<img src="img/cot.jpg" alt="фото коттеджа" class="hotel">
-							<h6 class="where-index__title">В коттедже</h6>
-							<p class="where-index__descr">От<a class="where-index__color"> 6800 </a>в/сутки</p>
-					</div>
-					</div>
-				</div>
-				</div>
-				</div>
+  		<h2 class="otzivi__title">Отзывы</h2>
+  		<div class="otzivi__wrap">
+  			
+  			
+
+  			<div class="container clearfix">
+  				<div class="row">
+  					<div class="col-sm-1">
+  						<div class="cardswrap__ar2"></div>
+  					</div>
+  					<div class="col-sm-5">
 
 
-			</section>
 
-<!------------------------------------------------------------------------------------------------>
-			<footer class="foot">
-			<div class="container">
-			<div class="foot__inner">
-				<div class="row">
-					<div class="col-sm-4">
-				
-					<div class="foot__wrap">
-						<span class="foot__addr">С.Петербург</span><br/>
-						<span class="foot__addr">Приморское ш.600</span>
-					</div>
-</div>
-<div class="col-sm-4">
-					<div class="foot__wrap">
-						<a href="#" class="main-logo"><img src="img/logo.svg" class="foot__img" alt="логотип фирмы 'Отдых'"></a>
-						<ul class="social">
-							<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-							<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-							
-								
-						</ul>
-					</div>
-					</div>
 
-					<div class="col-sm-4">
-					<div class="foot__wrap">
-					<a class="foot__tel">+7 978 667 55 67</a>
-					<a class="foot__mail">info@greenvalley.ru</a>
-						
-					</div>
+  						<div class="cardswrap__wrapforeach">
 
-				</div>
-</div>
-			
-			</footer>
+  							<img src="img/a1.jpg" alt="" class="cardswrap__card cardswrap__card--feedback1">
+  							<p class="cardswrap__name">Екатерина В.</p>
+  							<i class="fa fa-vk" aria-hidden="true"></i>
 
-	</body>
-	</html>			
-			
-		
+  							<p class="cardswrap__p">Наша семья счастлива, что открыла для себя Green Valley. Замечательный комфортный, отдых. Хорошие места, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
 
-		
-	
-							
-						
-					
+  							<div class="datawrap">
+  								<span class="datawrap__otziv-title">Дата отдыха</span><br/>
+  								<span class="datawrap__otziv-date">23.12.2007</span>		
+  							</div>
+  						</div>
+
+  					</div>
+
+  					<div class="col-sm-5">
+  						<div class="cardswrap__wrapforeach">
+
+  							<img src="img/a2.jpg" alt="" class="cardswrap__card cardswrap__card--feedback1">
+  							<p class="cardswrap__name">Екатерина В.</p>
+  							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+
+  							<p class="cardswrap__p">Наша семья счастлива, что открыла для себя Green Valley. Замечательный комфортный, отдых. Хорошие места, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
+  							<div class="datawrap">
+  								<span class="datawrap__otziv-title">Дата отдыха</span><br/>
+  								<span class="datawrap__otziv-date">23.12.2007</span>		
+  							</div>
+  						</div>
+
+  					</div>
+  					<div class="col-sm-1">
+  						<div class="cardswrap__ar1"></div>
+  					</div>
+  				</div>
+  				
+  			</div>
+
+  			<a href="#" class="btn btn--border">все отзывы</a>
+
+  		</section>
+
+  		<!---------------------------------------------------------------------------------------------------->
+
+  		<section class="aktsii">
+
+  			<div class="container">
+  				<div class="row">
+
+
+  					<div class="col-sm-12">
+
+  						<div class="aktsii__inner">
+  							<div class="aktsii__slider slider1">
+  								<div class="aktsii__label label1">
+
+  									<h5 class="aktsii__color">Скидки в мае</h5>
+  									<p>Забронируйте номер или коттедж любой<br/> категории до 31 июня и получите<br/> скидку 10%</p>
+  								</div>
+  								<!--<img src="img/aktsii1.jpg" class="aktsii__img">-->
+
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+
+
+  				<div class="container">
+  					<div class="row">
+  						<div class="col-sm-12 hidden-lg hidden-md hidden-sm hidden-xs">
+
+  							<div class="aktsii__slider slider2">
+  								<!--<img src="img/aktsii2.jpg" class="aktsii__img">-->
+  								<div class="aktsii__label label1">
+  									<h5 class="aktsii__color">Скидки в мае</h5>
+  									<p>Забронируйте номер или коттедж любой<br/> категории до 31 июня и получите<br/>скидку 10%</p>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+
+  				<div class="container">
+  					<div class="row">
+  						<div class="col-sm-12">
+
+  							<div class="aktsii__btn-inner">
+  								<span class="aktsii__btn aktsii__btn--active"></span>
+  								<span class="aktsii__btn"></span>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+
+  			</div>	
+  		</section>
+  		<!------------------------------------------------------------------------------>
+
+
+  		<section class="how">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-sm-12">	
+  						<h2 class="aktsii__title">Как до нас добраться</h2>
+  						<div class="map"></div>
+
+
+
+  					</div>
+  				</div>
+  			</div>
+
+
+  			<div class="container">
+  				<div class="aktsii__wraptransport">
+  					<div class="row">
+
+
+  						<div class="col-sm-6">	
+
+
+  							<div class="aktsii__single aktsii__single--bus">
+
+  								<h5 class="aktsii__bus">Автобусы</h5>
+  								<p class="aktsii__busdescr">
+  									№ 211 от станции метро "Черная речка".<br/>
+  									№ 211 от станции метро "Черная речка".<br/>
+  									№ 211 от станции метро "Черная речка".<br/>
+  									№ 211 от станции метро "Черная речка".<br/>
+
+
+  								</p>
+  							</div>
+  						</div>
+
+
+  						<div class="col-sm-6">	
+  							<div class="aktsii__single aktsii__single--electro">
+
+  								<h5 class="aktsii__bus">Электропоезда</h5>
+  								<p class="aktsii__busdescr">
+  									Электропоезд Выборгского направления<br/> от Финляндского вокзала Санкт-Петербурга<br/> до платформы "Репино".
+
+  								</p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+
+
+  		</section>	
+
+  		<!---------------------------------------------------------------------------------------------->
+
+  		<section class="where-index">
+  			<div class="container">
+  				<div class="where-index_inner">
+  					<h2 class="where-index__mtitle">Как до нас добраться</h2>
+  					<div class="row">
+  						<div class="col-sm-6">	
+
+  							<div class="where-index__card">
+  								<img src="img/hot.jpg" alt="фото номера отеля" class="hotel">
+  								<h6 class="where-index__title">В отеле</h6>
+  								<p class="where-index__descr">От<span class="where-index__color"> 4000 </span>в/сутки</p>
+  							</div>
+  						</div>
+  						<div class="col-sm-6">	
+
+  							<div class="where-index__card">
+  								<img src="img/cot.jpg" alt="фото коттеджа" class="hotel">
+  								<h6 class="where-index__title">В коттедже</h6>
+  								<p class="where-index__descr">От<a class="where-index__color"> 6800 </a>в/сутки</p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+
+
+  		</section>
+
+  		<!------------------------------------------------------------------------------------------------>
+  		<footer class="foot">
+  			<div class="container">
+  				<div class="foot__inner">
+  					<div class="row">
+  						<div class="col-sm-4">
+
+  							<div class="foot__wrap">
+  								<span class="foot__addr">С.Петербург</span><br/>
+  								<span class="foot__addr">Приморское ш.600</span>
+  							</div>
+  						</div>
+  						<div class="col-sm-4">
+  							<div class="foot__wrap">
+  								<a href="#" class="main-logo"><img src="img/logo.svg" class="foot__img" alt="логотип фирмы 'Отдых'"></a>
+  								<ul class="social">
+  									<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+  									<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+  									<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+
+
+  								</ul>
+  							</div>
+  						</div>
+
+  						<div class="col-sm-4">
+  							<div class="foot__wrap">
+  								<a class="foot__tel">+7 978 667 55 67</a>
+  								<a class="foot__mail">info@greenvalley.ru</a>
+
+  							</div>
+
+  						</div>
+  					</div>
+
+  				</footer>
+  				<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+  				<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+  				<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.js"></script> 
+  				<script src="js/common.js"></script>
+
+
+  			</body>
+  			</html>			
+
+
+
+
+
+
+

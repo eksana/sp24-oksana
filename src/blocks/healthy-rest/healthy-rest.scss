@@ -134,6 +134,45 @@
 	padding-left: 13px;
 	
 }
+
+.tw{
+	position: absolute;
+	top:80%;
+	left: 50px;
+	
+	color:red;
+}
+.f-container{
+	display: table;
+	width: 100%;
+	
+	text-align: center;
+	
+}
+
+.f-title{
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #222;
+	color: #FFF;
+	
+}
+.f-descr{
+	display: table-cell;
+	
+	background-color: #222;
+	color: #FFF;
+	}
+
+.f-but{
+	display: table-cell;
+	vertical-align: middle;
+	background-color: $sotial_color;
+	color: olive;
+	&:hover{
+		background-color: #fbe9e1;
+	}
+}
 .descr__descr-p{
 	padding: 20px 0;
 }
@@ -153,7 +192,12 @@
 	display: none;
 }
 
+@media only screen and (max-width : 780px) {
 
+	.healthy__descr{
+		margin-bottom: 50px;
+	}
+}
 
 
 
