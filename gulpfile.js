@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 gulp.task('rigg', function () {
     gulp.src('include/*.html')
         .pipe(rigger())
-        //.pipe(gulp.dest('otzivi/otzivi.html'));
+       
         .pipe(gulp.dest('build/'));
 });
 
