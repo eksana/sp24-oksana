@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
 	scss = require('gulp-scss'), //Подключаем Scss пакет
-	browserSync = require('browser-sync'); // Подключаем Browser Sync
-	var rigger = require('gulp-rigger');
+	browserSync = require('browser-sync'), // Подключаем Browser Sync
+	rigger = require('gulp-rigger');
  
 gulp.task('rigg', function () {
     gulp.src('include/*.html')
