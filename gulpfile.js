@@ -1,6 +1,14 @@
 var gulp = require('gulp'),
 	scss = require('gulp-scss'), //Подключаем Scss пакет
 	browserSync = require('browser-sync'); // Подключаем Browser Sync
+	var rigger = require('gulp-rigger');
+ 
+gulp.task('rigg', function () {
+    gulp.src('include/*.html')
+        .pipe(rigger())
+        //.pipe(gulp.dest('otzivi/otzivi.html'));
+        .pipe(gulp.dest('build/'));
+});
 
 	/*gulp.task('scss', function(){ // Создаем таск "scss"
     return gulp.src('src/scss/style.scss') // Берем источник
