@@ -1,222 +1,335 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>sp24</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sp24</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
-		<!--<link rel="stylesheet" href="css/reset.css">-->
-		<link rel="stylesheet" href="css/style.css">
-		
-	</head>
-	<body>
-		<header class="main-header">
-			<div class="main-header__inner ">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<!--<link rel="stylesheet" href="css/reset.css">-->
+	
+	
+	<!--<link rel="stylesheet" href="css/bootstrap-grid.min.css">-->
+	<link rel="stylesheet" href="css/style.css">
+	
+
+</head>
+<body>
+	<header class="main-header">
+		<div class="main-header__inner ">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
-				<a href="index.html" class="main-logo"><img src="img/logo.svg" alt="логотип фирмы 'Отдых'" class="logo-img"></a>
-				</div>
+						<a href="index.html" class="main-logo"><img src="img/logo.svg" alt="логотип фирмы 'Отдых'" class="logo-img"></a>
+					</div>
 
-				<div class="col-sm-5">
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link  main-nav__link--aktive">Номера</a></li>
-						<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
-						<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
-						<li class="main-nav__item"><a href="index.html" class="main-nav__link">Отдых</a></li>
-						<li class="main-nav__item"><a href="form.html" class="main-nav__link">Контакты</a></li>
-					
-					</ul>
-					</nav>
+					<div class="col-sm-5">
+						<nav class="main-nav">
+							<ul class="main-nav__list">
+								<li class="main-nav__item"><a href="Room_list.html" class="main-nav__link  main-nav__link--aktive">Номера</a></li>
+								<li class="main-nav__item"><a href="single.html" class="main-nav__link">Коттедж</a></li>
+								<li class="main-nav__item"><a href="#" class="main-nav__link">Ресторан</a></li>
+								<li class="main-nav__item"><a href="index.html" class="main-nav__link">Отдых</a></li>
+								<li class="main-nav__item"><a href="form.html" class="main-nav__link">Контакты</a></li>
+
+							</ul>
+						</nav>
+						<div class="main-nav--cross"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						<ul class="new-nav">
+							<li class="new-nav__item"><a href="single.html" class="new-nav__link">Коттедж</a></li>
+							<li class="new-nav__item"><a href="#" class="new-nav__link">Ресторан</a></li>
+							<li class="new-nav__item"><a href="index.html" class="new-nav__link">Отдых</a></li>
+							<li class="new-nav__item"><a href="form.html" class="new-nav__link">Контакты</a></li>
+						</ul>
 					</div>
 					<div class="col-sm-3">
-					<div class="main-header__tel-wrap">
-						<a href="form.html" class="main-header__tel">8 333 445-59-97</a><br/>
-						<span class="main-header__adress">С-Петербург,  Приморское шоссе, 5</span>
-					</div>
+						<div class="main-header__tel-wrap">
+							<a href="form.html" class="main-header__tel">8 333 445-59-97</a><br/>
+							<span class="main-header__adress">С-Петербург,  Приморское шоссе, 5</span>
+						</div>
 					</div>
 					<div class="col-sm-2">
-					<div class="butwrap">
-					<a href="#" class="mybtn mybtn-icon"><i class="fa fa-calendar-o mybtn-fa" aria-hidden="true"></i>Забронировать</a>
+						<div class="butwrap">
+							<a href="#" class="mybtn mybtn-icon"><i class="fa fa-calendar-o mybtn-fa" aria-hidden="true"></i>Забронировать</a>
+						</div>
 					</div>
-					</div>
+				</div>
 			</div>
-			</div>
-			</div>	
+		</div>	
 
-		</header>
-		
-		<!--@@include('blocks/main-header/main-header.html')-->
+	</header>
 
-<!-------------------------------------------------------------------------------------------->
-		<form action="kode.php" method="post" class="form">
-			<div class="form__wrap">
+	<!--@@include('blocks/main-header/main-header.html')-->
+
+	<!-------------------------------------------------------------------------------------------->
+	<form action="kode.php" method="post" class="form">
+		<div class="form__wrap">
 
 
-		<section class="form__bron">
+			<section class="form__bron">
 
-			<div class="container">
+				<div class="container">
 					<div class="col-sm-12">
 						<div class="row">
 
-			<h1 class="form__title">Бронирование</h1>
-			<p class="form__descr">
-				Чтобы забронировать номер в отеле или коттедж<br>, заполните форму ниже или просто позвоните<br>
-				по телефону: <span class="form__descr form__descr--color">+7 812 777-55-88</span>
-			</p>
-			</div>
-			</div>
-			</div>
-
-		</section>
-
-<!-- -------------------------------------------------------------------------------------------- -->
-		<section class="datarest d-one">
-			<div class="container">
-					
-
-
-			<span class="datarest__step">Шаг 1</span>
-			<h2 class="datarest__descr">Дата отдыха</h2>
-				<div class="datares__wrap">
-			
-					
-						<div class="datarest__wrapforeach dborder">
-					<h4 class="datarest__title">Дата въезда</h4>
-						<div class="datarest__inp-wrap">
-							<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
-							<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
-							<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
-							
+							<h1 class="form__title">Бронирование</h1>
+							<p class="form__descr">
+								Чтобы забронировать номер в отеле или коттедж<br>, заполните форму ниже или просто позвоните<br>
+								по телефону: <span class="form__descr form__descr--color">+7 812 777-55-88</span>
+							</p>
 						</div>
-					</div>
-					
-						
-						<div class="datarest__wrapforeach">	
-
-						<h4 class="datarest__title">Дата выезда</h4>
-						<div class="datares-wrap">
-							<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
-							<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
-							<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
-						</div>
-						
 					</div>
 				</div>
 
-				
-			</div>
+			</section>
+
+			<!-- -------------------------------------------------------------------------------------------- -->
+			<section class="datarest d-one">
+				<div class="container">
+					
+
+
+					<span class="datarest__step">Шаг 1</span>
+					<h2 class="datarest__descr">Дата отдыха</h2>
+					<div class="datarest__wrap">
+
+
+						<div class="datarest__wrapforeach dborder">
+							<h4 class="datarest__title">Дата въезда</h4>
+							<div class="datarest__inp-wrap">
+								<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
+								<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
+								<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
+
+							</div>
+						</div>
+
+						
+						<div class="datarest__wrapforeach">	
+
+							<h4 class="datarest__title">Дата выезда</h4>
+							<div class="datarest-wrap">
+								<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
+								<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
+								<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
 			</div>
 			
 		</section>
-<!-- ------------------------------------------------------------------------------------- -->
+		<!-- ------------------------------------------------------------------------------------- -->
 
 		<section class="datarest">
 			<span class="datarest__step">Шаг 2</span>
 			<h2 class="datarest__descr">Место проживания</h2>
-				<div class="container">
-				<div class="data-restwrap">
-					<input type="checkbox"	name="place" class="place__block" value="Отель"/>
-					<input type="checkbox"	name="place" class="place__block" value="Коттедж" checked="checked"/>		
-				</div>
-				</div>
-		</section>
 
-		<section class="datarest">
+			<div class="container">
+				<div class="datarest__wrap2">
+					<div class="datarest__wrapforeach2">
+						<label for="hotel" class="datarest__label">Отель</label>
+						<input type="radio"	id="hotel" name="place" class="place__block place__block--hotel" value="Отель"/>
+						<div class="datarest__hotel"></div>
+						<i class="fa fa-check datarest__hotel--fa" aria-hidden="true"></i>
+					</div>
+
+					<div class="datarest__wrapforeach">
+						<label for="cot" class="datarest__label">коттедж</label>
+						<input type="radio"	id="cot" name="place" class="place__block place__block--cot" value="Коттедж"/>
+						<div class="datarest__cot"></div>
+						<i class="fa fa-check datarest__cot--fa" aria-hidden="true"></i>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-------------------------------------------------------------------------------------------->
+		<section class="datarest d-one">
 			<span class="datarest__step">Шаг 3</span>
 			<h2 class="datarest__descr">Тип коттеджа</h2>
+
+<div class="container">
+			<div class="parent">
 				<div class="kottedj-wrap">
-					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Флагман" checked="checred"/>
-					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Озерный"/>
-					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Ольховка"/>
-					<input type="checkbox"	name="kottedj" class="kottedj__block" value="Портовый"/>
+						<div class="genwrap genwrap--fl">
+
+						<label for="Fl" class="parent__label parent__label--fl">Флагман</label>
+						<input type="radio"	name="kottedj" id="Fl" class="kottedj__block kottedj__block--fl" value="Флагман"/>
+						<!--<div class="kottedj-wrapforeach kottedj-wrapforeach--fl"></div>-->
+						<i class="fa fa-check kottedj-wrapforeach--fl--fa" aria-hidden="true"></i>
+
+
+					</div>
+
+					<div class="genwrap genwrap--oz">
+						<label for="Oz" class="parent__label parent__label--oz">Озерный</label>
+						<input type="radio"	name="kottedj" id="Oz" class="kottedj__block kottedj__block--oz" value="Озерный"/>
+						<!--<div class="kottedj-wrapforeach kottedj-wrapforeach--oz"></div>-->
+						<i class="fa fa-check kottedj-wrapforeach--oz--fa" aria-hidden="true"></i>
+					</div>
+
+					<div class="genwrap genwrap--ol">
+						<label for="ol" class="parent__label parent__label--ol">Ольховка</label>
+
+						<input type="radio"	name="kottedj" id="ol" class="kottedj__block kottedj__block--ol" value="Ольховка"/>
+						<!--<div class="kottedj-wrapforeach kottedj-wrapforeach--ol"></div>-->
+						<i class="fa fa-check kottedj-wrapforeach--ol--fa" aria-hidden="true"></i>
+					</div>
+
+					<div class="genwrap genwrap--pr">
+						<label for="pr" class="parent__label parent__label--pr">Портовый</label>
+
+						<input type="radio"	name="kottedj" id="pr" class="kottedj__block kottedj__block--pr" value="Портовый"/>
+						<!--<div class="kottedj-wrapforeach kottedj-wrapforeach--pr"></div>-->
+						<i class="fa fa-check kottedj-wrapforeach--pr--fa" aria-hidden="true"></i>
+					</div>
+
 				</div>
 
-				<div class="kottedj-wrap__single">
-					<div class="kottedj__descr"><p class="kottedj__descr__p">Площадь 100м2</p></div>
-					<div class="kottedj__descr"><p class="kottedj__descr__p">3 комнаты</p></div>
-					<div class="kottedj__descr"><p class="kottedj__descr__p">5 спальных мест</p></div>
-					<div class="kottedj__descr"><p class="kottedj__descr__p">Раздельный санузел</p></div>
-					<div class="kottedj__descr"><p class="kottedj__descr__p">WI-FI</p></div>
+				<div class="kottedj-gen">
+
+				<div class="kottedj-wrap__single kottedj-wrap__single--fl">
+					<div class="kottedj__descr kottedj__descr--s"><p class="kottedj__descr__p">Площадь 100м2</p></div>
+					<div class="kottedj__descr kottedj__descr--r"><p class="kottedj__descr__p">3 комнаты</p></div>
+					<div class="kottedj__descr kottedj__descr--b"><p class="kottedj__descr__p">5 спальных мест</p></div>
+					<div class="kottedj__descr kottedj__descr--c"><p class="kottedj__descr__p">Раздельный санузел</p></div>
+					<div class="kottedj__descr kottedj__descr--w"><p class="kottedj__descr__p">WI-FI</p></div>
 				</div>
 
+				<div class="kottedj-wrap__single kottedj-wrap__single--oz">
+					<div class="kottedj__descr kottedj__descr--s"><p class="kottedj__descr__p">Площадь 100м2</p></div>
+					<div class="kottedj__descr kottedj__descr--r"><p class="kottedj__descr__p">3 комнаты</p></div>
+					<div class="kottedj__descr kottedj__descr--b"><p class="kottedj__descr__p">5 спальных мест</p></div>
+					<div class="kottedj__descr kottedj__descr--c"><p class="kottedj__descr__p">Раздельный санузел</p></div>
+					<div class="kottedj__descr kottedj__descr--w"><p class="kottedj__descr__p">WI-FI</p></div>
+				</div>
+
+				<div class="kottedj-wrap__single kottedj-wrap__single--ol">
+					<div class="kottedj__descr kottedj__descr--s"><p class="kottedj__descr__p">Площадь 100м2</p></div>
+					<div class="kottedj__descr kottedj__descr--r"><p class="kottedj__descr__p">3 комнаты</p></div>
+					<div class="kottedj__descr kottedj__descr--b"><p class="kottedj__descr__p">5 спальных мест</p></div>
+					<div class="kottedj__descr kottedj__descr--c"><p class="kottedj__descr__p">Раздельный санузел</p></div>
+					<div class="kottedj__descr kottedj__descr--w"><p class="kottedj__descr__p">WI-FI</p></div>
+				</div>
+
+				<div class="kottedj-wrap__single kottedj-wrap__single--pr">
+					<div class="kottedj__descr kottedj__descr--s"><p class="kottedj__descr__p">Площадь 100м2</p></div>
+					<div class="kottedj__descr kottedj__descr--r"><p class="kottedj__descr__p">3 комнаты</p></div>
+					<div class="kottedj__descr kottedj__descr--b"><p class="kottedj__descr__p">5 спальных мест</p></div>
+					<div class="kottedj__descr kottedj__descr--c"><p class="kottedj__descr__p">Раздельный санузел</p></div>
+					<div class="kottedj__descr kottedj__descr--w"><p class="kottedj__descr__p">WI-FI</p></div>
+				</div>
+
+				</div>
+			</div>
+			</div>
 
 		</section>
 
 		<section class="datarest">
 			<span class="datarest__step">Шаг 4</span>
-				<div class="datarest__person-wrap">
-					
-						<input type="text"	name="First Name" class="personal__block" placeholder="First Name" required="required" />
-						<input type="text"	name="Last Name" class="personal__block" placeholder="Last Name" required="required" />
-						<label for="phone">Мы свяжемся с вами в случае необходимости</label>
-						<input type="phone"	name="phone" class="personal__block" placeholder="Phone" required="required" />
-						<label for="phone">На этот адрес мы вышлем Вам подтверждение о забронированном номере</label>
-						<input type="email"	name="email" class="personal__block" placeholder="email" required="required" />
-					
-				</div>
-			</section>
+			<div class="datarest__person-wrap">
 
-			<section class="datarest">
+				<input type="text"	name="First Name" class="personal__block" placeholder="First Name" required="required" />
+				<input type="text"	name="Last Name" class="personal__block" placeholder="Last Name" required="required" />
+				<label for="phone">Мы свяжемся с вами в случае необходимости</label>
+				<input type="phone"	name="phone" class="personal__block" placeholder="Phone" required="required" />
+				<label for="phone">На этот адрес мы вышлем Вам подтверждение о забронированном номере</label>
+				<input type="email"	name="email" class="personal__block" placeholder="email" required="required" />
+
+			</div>
+		</section>
+
+		<section class="datarest">
 			<span class="datarest__step">Шаг 4</span>
-				<div class="daterest__wrap">
-					<div class="for__pay">
-						<h4 class="for__pay__h4">К оплате</h4>
-						<p class="for__pay__p">Пожалуйста, <a href="#">выберите дату</a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
-					</div>
-					<div class="for__arrive">
-						<h4 class="for__pay__h4">По приезду</h4>
-						<p class="for__pay__p">Вы можете произвести оплату по факту заселения</p>
-					</div>
-					<div class="now">
-						<h4 class="for__pay__h4">Сейчас</h4>
-						<p class="for__pay__p">рямо сейчас Вы можете произвести оплату с помощью банковской карты</p>
-
-					</div>
-					<label for="Number cart ">Номер карты</label>
-						<input type="number"	name="Number cart" class="cart__block" placeholder="number" required="required" />
-					<label for="Kode ">Код CVV</label>
-						<input type="number"	name="Kode" class="kode__block" placeholder="number" required="required" />
-					<label for="Last name">Фамилия владельца карты</label>
-						<input type="text"	name="Last name" class="name__block" placeholder="Last Name" required="required" />
-
-					<label for="date">Действует до</label>
-						<input type="date"	name="date" class="date__block" placeholder="01 7 2016" required="required" />
+			<div class="daterest__wrap">
+				<div class="for__pay">
+					<h4 class="for__pay__h4">К оплате</h4>
+					<p class="for__pay__p">Пожалуйста, <a href="#">выберите дату</a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
+				</div>
+				<div class="for__arrive">
+					<h4 class="for__pay__h4">По приезду</h4>
+					<p class="for__pay__p">Вы можете произвести оплату по факту заселения</p>
+				</div>
+				<div class="now">
+					<h4 class="for__pay__h4">Сейчас</h4>
+					<p class="for__pay__p">рямо сейчас Вы можете произвести оплату с помощью банковской карты</p>
 
 				</div>
-			</section>
+				<label for="Number cart ">Номер карты</label>
+				<input type="number"	name="Number cart" class="cart__block" placeholder="number" required="required" />
+				<label for="Kode ">Код CVV</label>
+				<input type="number"	name="Kode" class="kode__block" placeholder="number" required="required" />
+				<label for="Last name">Фамилия владельца карты</label>
+				<input type="text"	name="Last name" class="name__block" placeholder="Last Name" required="required" />
 
-			<input type="submit" value="Забронировать"/>
-			</form>
-<!---------------------------------------------------------------------------------------------------->
+				<label for="date">Действует до</label>
+				<input type="date"	name="date" class="date__block" placeholder="01 7 2016" required="required" />
 
-			<footer class="foot">
-				<div class="foot__inner">
-					<div class="foot__wrap">
-						<span class="foot__addr">С.Петербург</span>
-						<span class="foot__addr">Приморское ш.600</span>
+			</div>
+		</section>
+
+		<input type="submit" value="Забронировать"/>
+	</form>
+	<!---------------------------------------------------------------------------------------------------->
+
+	<footer class="foot">
+		<div class="container">
+			<div class="foot__inner">
+				<div class="row">
+					<div class="col-sm-4">
+
+						<div class="foot__wrap">
+							<span class="foot__addr">С.Петербург</span><br/>
+							<span class="foot__addr">Приморское ш.600</span>
+						</div>
 					</div>
-					<div class="foot__wrap">
-						<a href="#" class="main-logo"><img src="#" alt="логотип фирмы 'Отдых'"></a>
-						<ul class="social">
-							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
-							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
-							<li><a href="#" class="foo__social"><i class="fa"></i></a></li>
-							
-								
-						</ul>
+					<div class="col-sm-4">
+						<div class="foot__wrap">
+							<a href="#" class="main-logo"><img src="img/logo.svg" class="foot__img" alt="логотип фирмы 'Отдых'"></a>
+							<ul class="social">
+								<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+								<li class="social__list"><a href="#" class="sociai__item"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+
+
+							</ul>
+						</div>
 					</div>
-					<div class="foot__wrap">
-					<a class="foot__tel">+7 978 667 55 67</a>
-					<a class="foot__mail">info@greenvalley.ru</a>
-						
+
+					<div class="col-sm-4">
+						<div class="foot__wrap">
+							<a class="foot__tel">+7 978 667 55 67</a>
+							<a class="foot__mail">info@greenvalley.ru</a>
+
+						</div>
 					</div>
 
 				</div>
+			</div>
+		</div>
 
-			</footer>
-	</body>
-	</html>	
+	</footer>
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.js"></script> 
+	<script src="libs/owl/owl.carousel.min.js"></script>
+	<script src="js/owl.js"></script>
+
+	<script src="js/common.js"></script>
+
+
+
+</body>
+</html>			
+
+

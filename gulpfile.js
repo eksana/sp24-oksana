@@ -1,13 +1,23 @@
 var gulp = require('gulp'),
 	scss = require('gulp-scss'), //Подключаем Scss пакет
 	browserSync = require('browser-sync'), // Подключаем Browser Sync
-	rigger = require('gulp-rigger');
+	fileinclude = require('gulp-file-include');
+	//rigger = require('gulp-rigger');
  
-gulp.task('rigg', function () {
-    gulp.src('include/*.html')
+/*gulp.task('rigg', function () {
+    gulp.src('src/include/*.html')
         .pipe(rigger())
        
         .pipe(gulp.dest('build/'));
+});*/
+
+gulp.task('fileinclude', function() {
+  gulp.src(['src/otzivi.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('build/'));
 });
 
 	/*gulp.task('scss', function(){ // Создаем таск "scss"

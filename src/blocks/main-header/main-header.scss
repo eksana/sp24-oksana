@@ -288,4 +288,20 @@ sandvich-end----------------------------------------*/
  		display: block;
  	}
  	
+ }
+ @media only screen and (max-width : 960px) {
+		.main-header__tel{
+			font-size: 16px;
+	letter-spacing: 1px;
+	}
  }	
+  @media only screen and (max-width : 768px) {
+  	.main-logo{
+  		margin-bottom: 30px;
+  	}
+  	.main-header__tel{
+  		margin-top: 30px;
+  		
+		}
+  }
+
