@@ -24,31 +24,19 @@ $(document).ready(function(){
 	/*-------------check form---------------------------*/
 
 
+
+	
+
 		$('.parent__label--fl').click(function(){
-		
-			$('.kottedj-wrap__single--fl').fadeIn();
-		
-
-	});	
+			var $this_fl=$('.kottedj-wrap__single--fl');
+			$this_fl.fadeIn();
+			});
 		$('.parent__label--oz').click(function(){
-		
-			$('.kottedj-wrap__single--oz').fadeIn();
-		
-
-	});	
-		$('.parent__label--ol').click(function(){
-		
-			$('.kottedj-wrap__single--ol').fadeIn();
-		
-
-	});	
-		$('.parent__label--pr').click(function(){
-		
-			$('.kottedj-wrap__single--pr').fadeIn();
-		
-
-	});	
-
+			var $this_oz=$('.kottedj-wrap__single--oz');
+			
+			$this_oz.fadeIn();
+			
+			});
 
 	
 /*---------------end document ready-----------*/		

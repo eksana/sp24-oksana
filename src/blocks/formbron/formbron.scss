@@ -289,8 +289,37 @@
 .genwrap{
 	width: 25%;
 	height: 140px;
-	background-color: red;
+	
+	background-color: #fff;
 	float: left;
+	
+}
+.genwrap--fl{
+	position: relative;
+	&:after{
+		content:'';
+		position: absolute;
+		border-right:15px solid transparent;
+		border-left:15px solid transparent;
+		border-top:15px solid red;
+		bottom:-10px;
+		left:50%;
+		margin-left:-15px;
+		}
+	
+}
+.genwrap--oz{
+	position: relative;
+	&:after{
+		content:'';
+		position: absolute;
+		border-right:15px solid transparent;
+		border-left:15px solid transparent;
+		border-top:15px solid red;
+		bottom:-10px;
+		left:50%;
+		margin-left:-15px;
+		}
 	
 }
 .kottedj-gen{
@@ -300,9 +329,11 @@
 	
 }
 .kottedj-wrap__single--fl{
-
+	
+	position: relative;
 	color: red;
 	display: none;
+	
 }
 .kottedj-wrap__single--oz{
 	color: green;
