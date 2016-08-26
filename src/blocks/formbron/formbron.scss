@@ -226,7 +226,7 @@
 }
 .kottedj-wrap__single{
 	width: 100%;
-	background-color: #FFF;
+	
 	margin-top: 30px;
 	overflow:hidden;
 	clear:both;
@@ -244,6 +244,14 @@
 .kottedj__descr--s{
 	background:#fff url("../img/Squad_rule_128.png") no-repeat center 10%;
 }
+/*.icon-Squad_rule_128 {
+  background-image: url(../../build/img/sprite.png);
+  background-position: -64px -58px;
+  width: 48px;
+  height: 48px;
+}*/
+
+
 .kottedj__descr--r{
 	background:#fff url("../img/Elevator_Door_128.png") no-repeat center 10%;
 }
@@ -258,9 +266,7 @@
 }
 
 .kottedj__block--fl:checked ~ .kottedj-wrapforeach--fl--fa{
-	
-		
-			display: block;
+	display: block;
 		
 		
 }
@@ -292,36 +298,37 @@
 	
 	background-color: #fff;
 	float: left;
+	margin-bottom:35px;
 	
 }
 .genwrap--fl{
 	position: relative;
 	
-	&:after{
+	/*&:before{
 		content:'';
 		position: absolute;
 		border-right:15px solid transparent;
 		border-left:15px solid transparent;
-		border-top:15px solid red;
-		bottom:-10px;
+		border-top:15px solid white;
+		bottom:-15px;
 		left:50%;
 		margin-left:-15px;
-		}
+		}*/
 	
 }
 .genwrap--oz{
 	position: relative;
 	
-	&:after{
+	/*&:before{
 		content:'';
 		position: absolute;
 		border-right:15px solid transparent;
 		border-left:15px solid transparent;
-		border-top:15px solid red;
-		bottom:-10px;
+		border-top:15px solid white;
+		bottom:-15px;
 		left:50%;
 		margin-left:-15px;
-		}
+		}*/
 	
 }
 .kottedj-gen{
@@ -335,6 +342,17 @@
 	position: relative;
 	color: red;
 	display:block;
+	&:after{
+		content:'';
+		position: absolute;
+		border-right:15px solid transparent;
+		border-left:15px solid transparent;
+		border-bottom:15px solid red;
+		top:-15px;
+		left:10%;
+		margin-left:-15px;
+		margin-top:30px;
+		}
 	
 }
 .kottedj-wrap__single--oz{

@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
 	scss = require('gulp-scss'), //Подключаем Scss пакет
 	browserSync = require('browser-sync'), // Подключаем Browser Sync
-	fileinclude = require('gulp-file-include');
+	fileinclude = require('gulp-file-include'),
+	spritesmith = require('gulp.spritesmith');
 	//rigger = require('gulp-rigger');
  
 /*gulp.task('rigg', function () {
@@ -31,6 +32,15 @@ gulp.task('fileinclude', function() {
         .pipe(scss())
         .pipe(gulp.dest('src/css'))
        .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
+
+	gulp.task('sprite', function () {
+  var spriteData = gulp.src('src/img/sprt/*.png')
+  .pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.css'
+  }));
+  return spriteData.pipe(gulp.dest('build/img'));
 });
 	
 	//gulp.task('browser-sync', function() { // Создаем таск browser-sync
