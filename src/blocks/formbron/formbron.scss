@@ -244,6 +244,7 @@
 .kottedj__descr--s{
 	background:#fff url("../img/Squad_rule_128.png") no-repeat center 10%;
 	margin-top:20px;
+	position: relative;
 /*.icon-Squad_rule_128 {
   background-image: url(../../build/img/sprite.png);
   background-position: -64px -58px;
@@ -251,19 +252,7 @@
   height: 48px;
 }*/
 
-&:after{
-		content:'';
-		position: absolute;
-		border-right:15px solid transparent;
-		border-left:15px solid transparent;
-		border-bottom:15px solid red;
-		top:-25px;
-		left:10%;
-		margin-left:-15px;
-		margin-top:30px;
-		}
-		}
-
+}
 
 .kottedj__descr--r{
 	background:#fff url("../img/Elevator_Door_128.png") no-repeat center 10%;
@@ -310,7 +299,23 @@
 		
 	}
 
+.kottedj-wrap__single--fl .kottedj__descr--s{
+	background:#fff url("../img/Squad_rule_128.png") no-repeat center 10%;
+	margin-top:20px;
+	position: relative;
 
+&:after{
+		content:'';
+		position: absolute;
+		border-right:15px solid transparent;
+		border-left:15px solid transparent;
+		border-bottom:15px solid red;
+		top:-45px;
+		left:59%;
+		margin-left:-15px;
+		margin-top:30px;
+		}
+		}
 
 	.kottedj-wrap__single--oz .kottedj__descr--r{
 	background:#fff url("../img/Elevator_Door_128.png") no-repeat center 10%;
@@ -324,6 +329,40 @@
 		border-bottom:15px solid red;
 		top:-45px;
 		left:90%;
+		margin-left:-15px;
+		margin-top:30px;
+		}
+}
+
+.kottedj-wrap__single--ol .kottedj__descr--c{
+	background:#fff url("../img/King_Size_Bed_128.png") no-repeat center 10%;
+	position: relative;
+	margin-top:20px;
+	&:after{
+		content:'';
+		position: absolute;
+		border-right:15px solid transparent;
+		border-left:15px solid transparent;
+		border-bottom:15px solid red;
+		top:-45px;
+		left:18%;
+		margin-left:-15px;
+		margin-top:30px;
+		}
+}
+
+.kottedj-wrap__single--pr .kottedj__descr--w{
+	background:#fff url("../img/Wifi_Modem_128.png") no-repeat center 10%;
+	position: relative;
+	margin-top:20px;
+	&:after{
+		content:'';
+		position: absolute;
+		border-right:15px solid transparent;
+		border-left:15px solid transparent;
+		border-bottom:15px solid red;
+		top:-45px;
+		left:43%;
 		margin-left:-15px;
 		margin-top:30px;
 		}
