@@ -243,7 +243,7 @@
 }
 .kottedj__descr--s{
 	background:#fff url("../img/Squad_rule_128.png") no-repeat center 10%;
-}
+	margin-top:20px;
 /*.icon-Squad_rule_128 {
   background-image: url(../../build/img/sprite.png);
   background-position: -64px -58px;
@@ -251,18 +251,36 @@
   height: 48px;
 }*/
 
+&:after{
+		content:'';
+		position: absolute;
+		border-right:15px solid transparent;
+		border-left:15px solid transparent;
+		border-bottom:15px solid red;
+		top:-25px;
+		left:10%;
+		margin-left:-15px;
+		margin-top:30px;
+		}
+		}
+
 
 .kottedj__descr--r{
 	background:#fff url("../img/Elevator_Door_128.png") no-repeat center 10%;
+	margin-top:20px;
+	
 }
 .kottedj__descr--b{
 	background:#fff url("../img/Hotel_Bathtub__128.png") no-repeat center 10%;
+	margin-top:20px;
 }
 .kottedj__descr--c{
 	background:#fff url("../img/King_Size_Bed_128.png") no-repeat center 10%;
+	margin-top:20px;
 }
 .kottedj__descr--w{
 	background:#fff url("../img/Wifi_Modem_128.png") no-repeat center 10%;
+	margin-top:20px;
 }
 
 .kottedj__block--fl:checked ~ .kottedj-wrapforeach--fl--fa{
@@ -291,6 +309,25 @@
 		
 		
 	}
+
+
+
+	.kottedj-wrap__single--oz .kottedj__descr--r{
+	background:#fff url("../img/Elevator_Door_128.png") no-repeat center 10%;
+	position: relative;
+	margin-top:20px;
+	&:after{
+		content:'';
+		position: absolute;
+		border-right:15px solid transparent;
+		border-left:15px solid transparent;
+		border-bottom:15px solid red;
+		top:-45px;
+		left:90%;
+		margin-left:-15px;
+		margin-top:30px;
+		}
+}
 
 .genwrap{
 	width: 25%;
@@ -336,13 +373,14 @@
 	height: 200px;
 	border:1px solid magenta;
 	overflow:hidden;
+	margin-top:-50px;
 }
 .kottedj-wrap__single--fl{
 	
 	position: relative;
 	color: red;
 	display:block;
-	&:after{
+	/*&:after{
 		content:'';
 		position: absolute;
 		border-right:15px solid transparent;
@@ -352,7 +390,7 @@
 		left:10%;
 		margin-left:-15px;
 		margin-top:30px;
-		}
+		}*/
 	
 }
 .kottedj-wrap__single--oz{
