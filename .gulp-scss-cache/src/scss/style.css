@@ -2248,12 +2248,13 @@ sandvich-end----------------------------------------*/
 .kottedj-gen {
   width: 100%;
   height: 200px;
-  border: 1px solid magenta; }
+  border: 1px solid magenta;
+  overflow: hidden; }
 
 .kottedj-wrap__single--fl {
   position: relative;
   color: red;
-  display: none; }
+  display: block; }
 
 .kottedj-wrap__single--oz {
   color: green;
