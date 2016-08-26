@@ -167,7 +167,7 @@
 .parent__label{
 	margin-top: 50px;
 	display: inline-block;
-	
+	cursor: pointer;
 }
 /*.kottedj-wrapforeach{
 	
@@ -296,6 +296,7 @@
 }
 .genwrap--fl{
 	position: relative;
+	
 	&:after{
 		content:'';
 		position: absolute;
@@ -310,6 +311,7 @@
 }
 .genwrap--oz{
 	position: relative;
+	
 	&:after{
 		content:'';
 		position: absolute;

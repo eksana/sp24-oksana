@@ -2119,7 +2119,8 @@ sandvich-end----------------------------------------*/
 
 .parent__label {
   margin-top: 50px;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
 
 /*.kottedj-wrapforeach{
 	
