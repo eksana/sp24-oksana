@@ -99,13 +99,13 @@
 
 
 					
-						<div class="container">
+					<div class="container">
 						<div class="datarest__wrap">
 							<div class="row">
 								<div class="col-sm-6 col-xs-12">
 
 									<div class="datarest__wrapforeach dborder">
-										<h4 class="datarest__title">Дата въезда</h4>
+										<h4 class="datarest__title"><a name="date__req" class="dr">Дата въезда</a></h4>
 
 										<div class="datarest__inp-wrap">
 
@@ -118,10 +118,10 @@
 									</div>
 								</div>
 
-							
-						
 
-						
+
+
+
 								<div class="col-sm-6 col-xs-12">
 									<div class="datarest__wrapforeach">	
 
@@ -131,13 +131,13 @@
 											<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
 											<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
 										</div>
-										</div>
+									</div>
 
 									
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 				</div>
 
 
@@ -155,21 +155,21 @@
 			<div class="datarest__wrap2">
 				<!--<div class="datarest__wrapforeach2">-->
 				<div class="row">
-				<div class="col-sm-6 col-xs-6">
-					<label for="hotel" class="datarest__label">Отель</label>
-					<input type="radio"	id="hotel" name="place" class="place__block place__block--hotel" value="Отель"/>
-					<div class="datarest__hotel"></div>
-					<i class="fa fa-check datarest__hotel--fa" aria-hidden="true"></i>
+					<div class="col-sm-6 col-xs-6">
+						<label for="hotel" class="datarest__label">Отель</label>
+						<input type="radio"	id="hotel" name="place" class="place__block place__block--hotel" value="Отель"/>
+						<div class="datarest__hotel"></div>
+						<i class="fa fa-check datarest__hotel--fa" aria-hidden="true"></i>
+					</div>
+					<!--<div class="datarest__wrapforeach2">-->
+					<div class="col-sm-6 col-xs-6">				
+						<label for="cot" class="datarest__label">коттедж</label>
+						<input type="radio"	id="cot" name="place" class="place__block place__block--cot" value="Коттедж"/>
+						<div class="datarest__cot"></div>
+						<i class="fa fa-check datarest__cot--fa" aria-hidden="true"></i>
+					</div>
 				</div>
-<!--<div class="datarest__wrapforeach2">-->
-<div class="col-sm-6 col-xs-6">				
-					<label for="cot" class="datarest__label">коттедж</label>
-					<input type="radio"	id="cot" name="place" class="place__block place__block--cot" value="Коттедж"/>
-					<div class="datarest__cot"></div>
-					<i class="fa fa-check datarest__cot--fa" aria-hidden="true"></i>
-				</div>
-</div>
-</div>
+			</div>
 			<!--</div>-->
 		</div>
 	</section>
@@ -297,49 +297,66 @@
 	<h2 class="datarest__descr">Способ оплаты</h2>
 
 	<div class="container">
-	<div class="row">
-					<div class="col-sm-4">	
+		<div class="row">
 
-	<div class="daterest__wrap">
-		<div class="for__pay">
-			<h4 class="for__pay__h4">К оплате</h4>
-			<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста, <a href="#">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
+
+			<div class="col-sm-8 col-sm-push-4 col-xs-12">	
+
+				<div class="for__arrive">
+					<!--<h4 class="for__arrive__h4">По приезду</h4>-->
+					<i class="fa fa-check  for__arrive__fa-check fa-check--no-active"></i><label for="arr" class="parent__labelarr parent__labelarr--arr">По приезду</label>
+					<input type="radio"	name="arrive" id="arr" class="for__arriveR" value="По-приезду"/>
+					<p class="for__pay__p">Вы можете произвести оплату по факту заселения</p>
+				</div>
+				<div class="now">
+					<!--<h4 class="for__now__h4">Сейчас</h4>-->
+					<i class="fa fa-check now__fa-check fa-check--myactive"></i><label for="nw" class="parent__labelarr parent__labelarr--arr">Сейчас</label>
+					<input type="radio"	name="arrive" id="nw" class="for__arriveR" value="Сейчас"/>
+					<p class="for__pay__p">Прямо сейчас Вы можете произвести оплату с помощью банковской карты</p>
+
+				</div>
+				<div class="data__wrap">
+					<div class="data data__nc">
+
+						<label for="nc" class="parent__label__fornc">Номер карты</label>
+						<input type="text"	name="Number cart" id="nc" class="block cart__block" placeholder="0000 - 0000 - 0000 - 0000" required="required"/>
+					</div>
+
+					<div class="data data__kd">
+
+						<label for="kd" class="parent__label__forkd">Код CVV</label>
+						<input type="text"	name="Kode" class="block kode__block" id="kd" placeholder="121" required="required" />
+					</div>
+
+					<div class="data data__ln">
+
+						<label for="ln" class="parent__label__forln">Фамилия владельца карты</label>
+						<input type="text"	name="Last name" class="block name__block" id="ln" placeholder="Vladimimr Vladimirov" required="required" />
+					</div>
+
+					<div class="data data__d">
+
+						<label for="d" class="parent__label__ford">Действует до</label>
+						<input type="date"	name="date" class="block date__block" id="d" placeholder="01/2016" required="required" />
+					</div>
+				</div>
+
+			</div>
+<div class="col-sm-4 col-sm-pull-8 col-xs-12">	
+
+				<div class="daterest__wrap">
+					<div class="for__pay">
+						<h4 class="for__pay__h4">К оплате</h4>
+						<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста, <a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
-		</div>
-		</div>
-
-					<div class="col-sm-8">	
-
-		<div class="for__arrive">
-			<!--<h4 class="for__arrive__h4">По приезду</h4>-->
-			<i class="fa fa-check no-active"></i><label for="arr" class="parent__labelarr parent__labelarr--arr">По приезду</label>
-						<input type="radio"	name="arrive" id="arr" class="for__arriveR" value="По-приезду"/>
-			<p class="for__pay__p">Вы можете произвести оплату по факту заселения</p>
-		</div>
-		<div class="now">
-			<!--<h4 class="for__now__h4">Сейчас</h4>-->
-			<i class="fa fa-check myactive"></i><label for="nw" class="parent__labelarr parent__labelarr--arr">Сейчас</label>
-						<input type="radio"	name="arrive" id="nw" class="for__arriveR" value="Сейчас"/>
-			<p class="for__pay__p">Прямо сейчас Вы можете произвести оплату с помощью банковской карты</p>
-
-		</div>
-			<div class="data__wrap">
-
-		<label for="nc" class="parent__label__fornc">Номер карты</label>
-		<input type="text"	name="Number cart" id="nc" class="cart__block" placeholder="number" required="required" />
-
-		<label for="kd" class="parent__label__forkd">Код CVV</label>
-		<input type="text"	name="Kode" class="kode__block" id="kd" placeholder="number" required="required" />
-
-		<label for="ln" class="parent__label__forln">Фамилия владельца карты</label>
-		<input type="text"	name="Last name" class="name__block" id="ln" placeholder="Last Name" required="required" />
-
-		<label for="d" class="parent__label__ford">Действует до</label>
-		<input type="date"	name="date" class="date__block" id="d" placeholder="01 7 2016" required="required" />
-</div>
 	</div>
-	</div>
-	</div>
+
+
+
 	<input type="submit"  class="sub" value="Забронировать"/>
 </section>
 

@@ -2037,6 +2037,9 @@ sandvich-end----------------------------------------*/
   text-align: center;
   padding: 0 20px 30px; }
 
+.dborder {
+  border-right: 1px solid grey; }
+
 .datarest__wrapforeach1 {
   text-align: center;
   padding: 0 20px 30px;
@@ -2046,6 +2049,10 @@ sandvich-end----------------------------------------*/
   background-color: #FFF;
   padding-bottom: 50px;
   padding-top: 30px; }
+
+.datares__date {
+  border: none;
+  display: inline; }
 
 .datarest__wrapforeach2 {
   float: left;
@@ -2076,6 +2083,7 @@ sandvich-end----------------------------------------*/
 .datarest__hotel {
   /*width: 200px;*/
   height: 165px;
+  border-right: 1px solid grey;
   position: relative;
   background: url("../img/hotel.png") no-repeat center center; }
   .datarest__hotel:before {
@@ -2409,6 +2417,9 @@ sandvich-end----------------------------------------*/
     left: 50%;
     margin-left: -5px; }
 
+.block {
+  width: 70%; }
+
 .fa-exclamation-circle {
   display: inline-block;
   float: left;
@@ -2435,7 +2446,7 @@ sandvich-end----------------------------------------*/
   cursor: pointer;
   float: left; }
 
-.fa-check {
+.for__arrive__fa-check, .now__fa-check {
   display: block;
   float: left;
   padding-right: 20px; }
@@ -2446,10 +2457,10 @@ sandvich-end----------------------------------------*/
 .parent__labelarr {
   text-transform: uppercase; }
 
-.no-active {
+.fa-check--no-active {
   color: lightgrey; }
 
-.myactive {
+.fa-check--myactive {
   color: #0ab89d; }
 
 .now {
@@ -2457,17 +2468,42 @@ sandvich-end----------------------------------------*/
   margin-top: 30px;
   background-color: #FFF; }
 
+.data {
+  float: left;
+  border: 1px solid green; }
+
+.daterest__wrap {
+  height: 415px;
+  background-color: #FFF; }
+
+.data__nc, .data__ln {
+  width: 60%; }
+
+.data__kd, .data__d {
+  width: 40%; }
+
 .data__wrap {
   width: 100%;
   background-color: #FFF;
   padding: 30px 20px;
-  text-align: left; }
+  text-align: left;
+  overflow: hidden; }
 
 .parent__label__fornc, .parent__label__forkd, .parent__label__forln, .parent__label__ford {
-  display: block; }
+  display: block;
+  margin-bottom: 16px;
+  text-transform: uppercase; }
 
 .cart__block, .kode__block, .name__block, .date__block {
-  display: block; }
+  display: block;
+  margin-bottom: 30px; }
+
+.for__pay__required {
+  border-bottom: 1px dotted #222;
+  color: #222; }
+
+.dr {
+  color: #222; }
 
 .sub {
   width: 100%;
@@ -2476,7 +2512,8 @@ sandvich-end----------------------------------------*/
   border: 1px solid #0ab89d;
   color: #FFF;
   font-size: 14px;
-  padding: 18px 0; }
+  padding: 18px 0;
+  text-transform: uppercase; }
 
 @media only screen and (max-width: 780px) {
   .datarest__wrap {
@@ -2489,6 +2526,21 @@ sandvich-end----------------------------------------*/
     width: 100%; }
 
   .kottedj-gen {
-    display: none; } }
+    display: none; }
+
+  .data {
+    float: none; }
+
+  .data__nc, .data__ln {
+    width: 100%; }
+
+  .data__kd, .data__d {
+    width: 100%; }
+
+  .daterest__wrap {
+    height: 315px; }
+
+  .data__wrap {
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

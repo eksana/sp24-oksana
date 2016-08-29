@@ -67,6 +67,15 @@
 	padding:0 20px 30px;
 	
 	
+	
+}
+
+.dborder{
+	
+	
+	border-right: 1px solid grey;
+	
+	
 }
 .datarest__wrapforeach1{
 	
@@ -80,6 +89,10 @@
 	padding-top: 30px;
 	
 	
+}
+.datares__date{
+	border:none;
+	display: inline;
 }
 .datarest__wrapforeach2{
 	
@@ -113,6 +126,7 @@
 .datarest__hotel{
 	/*width: 200px;*/
 	height: 165px;
+	border-right: 1px solid grey;
 	position: relative;
 	background: url("../img/hotel.png")no-repeat center center;
 	
@@ -509,6 +523,10 @@ color: #333;
 
 }
 
+.block{
+	width: 70%;
+}
+
 .fa-exclamation-circle{
 	display: inline-block;
 	float: left;
@@ -536,7 +554,7 @@ color: #333;
 	cursor: pointer;
 	float: left;
 }
-.fa-check{
+.for__arrive__fa-check,.now__fa-check{
 	display: block;
 	float: left;
 	padding-right: 20px;
@@ -547,10 +565,10 @@ color: #333;
 .parent__labelarr{
 	text-transform: uppercase;
 }
-.no-active{
+.fa-check--no-active{
 	color: lightgrey;
 }
-.myactive{
+.fa-check--myactive{
 	color: $sotial_color;
 }
 .now{
@@ -558,19 +576,48 @@ color: #333;
 	margin-top: 30px;
 	background-color: #FFF;
 	
+	
+}
+.data{
+	
+	float: left;
+	border: 1px solid green;
+}
+.daterest__wrap{
+	height: 415px;
+	background-color: #FFF;
+}
+.data__nc, .data__ln{
+	width: 60%;
+}
+.data__kd, .data__d{
+	width: 40%;
 }
 .data__wrap{
 	width: 100%;
 	background-color: #FFF;
 	padding: 30px 20px;
 	text-align: left;
+	overflow: hidden;
 }
 .parent__label__fornc, .parent__label__forkd, .parent__label__forln, .parent__label__ford{
 	display: block;
+	margin-bottom: 16px;
+	text-transform: uppercase;
 	
 }
 .cart__block, .kode__block, .name__block, .date__block{
-display: block;}
+display: block;
+margin-bottom: 30px;
+}
+.for__pay__required{
+	border-bottom:1px dotted #222;
+	
+	color: #222;
+}
+.dr{
+	color: #222;
+}
 .sub{
 	width: 100%;
 	margin-top: 52px;
@@ -579,6 +626,7 @@ display: block;}
 	color: #FFF;
 	font-size: 14px;
 	padding: 18px 0;
+	text-transform: uppercase;
 }
 
 
@@ -596,5 +644,21 @@ display: block;}
     .kottedj-gen{
     	display: none;
     }
+    .data{
+    	float: none;
+    }
+    .data__nc, .data__ln{
+	width: 100%;
+}
+.data__kd, .data__d{
+	width: 100%;
+}
+.daterest__wrap {
+    height: 315px;
+    
+    }
+   .data__wrap{
+   	margin-bottom: 30px;
+   }
    
 }
