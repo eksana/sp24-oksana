@@ -24,17 +24,14 @@ $(document).ready(function(){
 	/*-------------check form---------------------------*/
 
 
-var $this_fl=$('.kottedj-wrap__single--fl');
+			var $this_fl=$('.kottedj-wrap__single--fl');
 			var $this_oz=$('.kottedj-wrap__single--oz');
 			var $this_ol=$('.kottedj-wrap__single--ol');
 			var $this_pr=$('.kottedj-wrap__single--pr');
 	
 
 		$('.parent__label.parent__label--fl').click(function(){
-			/*var $this_fl=$('.kottedj-wrap__single--fl');
-			var $this_oz=$('.kottedj-wrap__single--oz');
-			var $this_ol=$('.kottedj-wrap__single--ol');
-			var $this_pr=$('.kottedj-wrap__single--pr');*/
+			
 			$this_fl.fadeIn();
 			$this_oz.fadeOut();
 			$this_pr.fadeOut();
@@ -43,10 +40,7 @@ var $this_fl=$('.kottedj-wrap__single--fl');
 						});
 
 		$('.parent__label.parent__label--oz').click(function(){
-			/*var $this_fl=$('.kottedj-wrap__single--fl');
-			var $this_oz=$('.kottedj-wrap__single--oz');
-			var $this_ol=$('.kottedj-wrap__single--ol');
-			var $this_pr=$('.kottedj-wrap__single--pr');*/
+			
 			$this_oz.fadeIn();
 			$this_fl.fadeOut();
 			$this_ol.fadeOut();
@@ -54,10 +48,7 @@ var $this_fl=$('.kottedj-wrap__single--fl');
 			
 			});
 		$('.parent__label.parent__label--ol').click(function(){
-			/*var $this_fl=$('.kottedj-wrap__single--fl');
-			var $this_oz=$('.kottedj-wrap__single--oz');
-			var $this_ol=$('.kottedj-wrap__single--ol');
-			var $this_pr=$('.kottedj-wrap__single--pr');*/
+			
 			$this_ol.fadeIn();
 			$this_oz.fadeOut();
 			$this_fl.fadeOut();
@@ -65,10 +56,7 @@ var $this_fl=$('.kottedj-wrap__single--fl');
 						});
 
 	$('.parent__label.parent__label--pr').click(function(){
-			/*var $this_fl=$('.kottedj-wrap__single--fl');
-			var $this_oz=$('.kottedj-wrap__single--oz');
-			var $this_ol=$('.kottedj-wrap__single--ol');
-			var $this_pr=$('.kottedj-wrap__single--pr');*/
+			
 			$this_pr.fadeIn();
 			$this_ol.fadeOut();
 			$this_oz.fadeOut();
