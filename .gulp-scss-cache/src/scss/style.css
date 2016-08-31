@@ -2035,10 +2035,17 @@ sandvich-end----------------------------------------*/
 
 .datarest__wrapforeach {
   text-align: center;
-  padding: 0 20px 30px; }
+  padding: 0 20px 30px;
+  position: relative; }
 
-.dborder {
-  border-right: 1px solid grey; }
+.dborder:after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 105%;
+  background-color: grey;
+  width: 1px;
+  height: 70px; }
 
 .datarest__wrapforeach1 {
   text-align: center;
@@ -2060,16 +2067,13 @@ sandvich-end----------------------------------------*/
   border-right: 1px solid #f1f1f1;
   text-align: center; }
 
-.border {
-  display: inline-block;
-  margin-left: 230px;
-  width: 1px;
-  height: 80px;
-  background-color: lightgrey;
-  margin-top: -300px; }
-
-/*.dborder{
-	border-right: 1px solid #f1f1f1;
+/*.border{
+	display: inline-block;
+	margin-left: 230px;
+	width: 1px;
+	height: 80px;
+	background-color: lightgrey;
+	margin-top: -300px;
 }*/
 .place__block {
   display: none; }
@@ -2083,7 +2087,6 @@ sandvich-end----------------------------------------*/
 .datarest__hotel {
   /*width: 200px;*/
   height: 165px;
-  border-right: 1px solid grey;
   position: relative;
   background: url("../img/hotel.png") no-repeat center center; }
   .datarest__hotel:before {
@@ -2325,30 +2328,37 @@ sandvich-end----------------------------------------*/
   margin-bottom: 35px; }
 
 .genwrap--fl {
-  position: relative;
-  /*&:before{
-  	content:'';
-  	position: absolute;
-  	border-right:15px solid transparent;
-  	border-left:15px solid transparent;
-  	border-top:15px solid white;
-  	bottom:-15px;
-  	left:50%;
-  	margin-left:-15px;
-  	}*/ }
+  position: relative; }
+  .genwrap--fl:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 98%;
+    background-color: grey;
+    width: 1px;
+    height: 70px; }
 
 .genwrap--oz {
-  position: relative;
-  /*&:before{
-  	content:'';
-  	position: absolute;
-  	border-right:15px solid transparent;
-  	border-left:15px solid transparent;
-  	border-top:15px solid white;
-  	bottom:-15px;
-  	left:50%;
-  	margin-left:-15px;
-  	}*/ }
+  position: relative; }
+  .genwrap--oz:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 98%;
+    background-color: grey;
+    width: 1px;
+    height: 70px; }
+
+.genwrap--ol {
+  position: relative; }
+  .genwrap--ol:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 98%;
+    background-color: grey;
+    width: 1px;
+    height: 70px; }
 
 .kottedj-gen {
   width: 100%;
@@ -2473,7 +2483,7 @@ sandvich-end----------------------------------------*/
   border: 1px solid green; }
 
 .daterest__wrap {
-  height: 415px;
+  padding-bottom: 160px;
   background-color: #FFF; }
 
 .data__nc, .data__ln {
@@ -2541,6 +2551,48 @@ sandvich-end----------------------------------------*/
     height: 315px; }
 
   .data__wrap {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .genwrap--fl {
+    position: relative; }
+    .genwrap--fl:after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 98%;
+      background-color: grey;
+      width: 0;
+      height: 0; }
+
+  .genwrap--oz {
+    position: relative; }
+    .genwrap--oz:after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 98%;
+      background-color: grey;
+      width: 0;
+      height: 0; }
+
+  .genwrap--ol {
+    position: relative; }
+    .genwrap--ol:after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 98%;
+      background-color: grey;
+      width: 0;
+      height: 0; }
+
+  .dborder:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 105%;
+    background-color: grey;
+    width: 0;
+    height: 0; } }
 
 /*# sourceMappingURL=style.css.map */
