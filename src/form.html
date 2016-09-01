@@ -20,9 +20,11 @@
 
 </head>
 <body>
+<div class="container">
 	<header class="main-header">
+
 		<div class="main-header__inner ">
-			<div class="container">
+			
 				<div class="row">
 					<div class="col-sm-2">
 						<a href="index.html" class="main-logo"><img src="img/logo.svg" alt="логотип фирмы 'Отдых'" class="logo-img"></a>
@@ -60,9 +62,10 @@
 					</div>
 				</div>
 			</div>
-		</div>	
+		
 
 	</header>
+	</div>	
 
 	<!--@@include('blocks/main-header/main-header.html')-->
 
@@ -109,11 +112,10 @@
 
 										<div class="datarest__inp-wrap">
 
-											<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
-											<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
-											<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
-											<!--<span class="border"></span>-->
-
+											<input type="text" name="date" class="datarest__inp" id="datarest__day" placeholder="ДД"/>
+											<input type="text" name="month" class="datarest__inp" id="datarest__month" placeholder="ММ"/>
+											<input type="text" name="year" class="datarest__inp" id="datarest__year" placeholder="ГГГГ"/>
+											
 										</div>
 									</div>
 								</div>
@@ -128,7 +130,7 @@
 										<h4 class="datarest__title">Дата выезда</h4>
 										<div class="datarest-wrap">
 											<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
-											<input type="text" name="month" class="datarest__inp" placeholder="ММ"/>
+											<input type="text" name="month" class="datarest__inp" placeholder="MМ"/>
 											<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
 										</div>
 									</div>
@@ -185,7 +187,7 @@
 
 						<label for="Fl" class="parent__label parent__label--fl">Флагман</label>
 						<input type="radio"	name="kottedj" id="Fl" class="kottedj__block kottedj__block--fl" value="Флагман"/>
-						<!--<div class="kottedj-wrapforeach kottedj-wrapforeach--fl"></div>-->
+						
 						<i class="fa fa-check kottedj-wrapforeach--fl--fa" aria-hidden="true"></i>
 
 
@@ -194,7 +196,7 @@
 					<div class="genwrap genwrap--oz">
 						<label for="Oz" class="parent__label parent__label--oz">Озерный</label>
 						<input type="radio"	name="kottedj" id="Oz" class="kottedj__block kottedj__block--oz" value="Озерный"/>
-						<!--<div class="kottedj-wrapforeach kottedj-wrapforeach--oz"></div>-->
+						
 						<i class="fa fa-check kottedj-wrapforeach--oz--fa" aria-hidden="true"></i>
 					</div>
 
@@ -202,7 +204,7 @@
 						<label for="ol" class="parent__label parent__label--ol">Ольховка</label>
 
 						<input type="radio"	name="kottedj" id="ol" class="kottedj__block kottedj__block--ol" value="Ольховка"/>
-						<!--<div class="kottedj-wrapforeach kottedj-wrapforeach--ol"></div>-->
+						
 						<i class="fa fa-check kottedj-wrapforeach--ol--fa" aria-hidden="true"></i>
 					</div>
 
@@ -210,7 +212,7 @@
 						<label for="pr" class="parent__label parent__label--pr">Портовый</label>
 
 						<input type="radio"	name="kottedj" id="pr" class="kottedj__block kottedj__block--pr" value="Портовый"/>
-						<!--<div class="kottedj-wrapforeach kottedj-wrapforeach--pr"></div>-->
+						
 						<i class="fa fa-check kottedj-wrapforeach--pr--fa" aria-hidden="true"></i>
 					</div>
 
@@ -258,29 +260,29 @@
 	<!------------------------------------------------------------------------------------------------------------>
 	<section class="datarest">
 		<span class="datarest__step">Шаг 4</span>
-		<h2 class="datarest__descr">Персональная информация</h2>
+		<h2 class="datarest__descr"><a name="fname__req" class="dr">Персональная информация</a></h2>
 		<div class="datarest__person-wrap">
 
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">	
 
-						<input type="text"	name="First Name" class="personal__block" placeholder="Имя" required="required" />
+						<input type="text"	name="First Name" class="personal__block" id="fname" placeholder="Имя" required="required" />
 					</div>
 					<div class="col-sm-6">
-						<input type="text"	name="Last Name" class="personal__block" placeholder="Фамалия" required="required" />
+						<input type="text"	name="Last Name" class="personal__block" id="lname" placeholder="Фамалия" required="required" />
 
 
 
 
 					</div>
 					<div class="col-sm-6">
-						<input type="phone"	name="phone" class="personal__block" placeholder="Номер телефона" required="required" />
+						<input type="phone"	name="phone" class="personal__block" id="tlf" placeholder="Номер телефона" required="required" />
 						<p class="datarest__forinput-descr">Мы свяжемся с вами в случае необходимости</p>
 					</div>
 					<div class="col-sm-6">
 
-						<input type="email"	name="email" class="personal__block" placeholder="email" required="required" />
+						<input type="email"	name="email" class="personal__block" id="eml" placeholder="email" required="required" />
 						<p class="datarest__forinput-descr">На этот адрес мы вышлем Вам подтверждение о забронированном номере</p>
 					</div>
 				</div>
@@ -310,7 +312,7 @@
 				</div>
 				<div class="now">
 					<!--<h4 class="for__now__h4">Сейчас</h4>-->
-					<i class="fa fa-check now__fa-check fa-check--myactive"></i><label for="nw" class="parent__labelarr parent__labelarr--arr">Сейчас</label>
+					<i class="fa fa-check now__fa-check fa-check--no-active"></i><label for="nw" class="parent__labelarr parent__labelarr--arr">Сейчас</label>
 					<input type="radio"	name="arrive" id="nw" class="for__arriveR" value="Сейчас"/>
 					<p class="for__pay__p">Прямо сейчас Вы можете произвести оплату с помощью банковской карты</p>
 
@@ -347,9 +349,10 @@
 				<div class="daterest__wrap">
 					<div class="for__pay">
 						<h4 class="for__pay__h4">К оплате</h4>
-						<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста, <a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
+						<div class="for__error"></div>
+						<!--<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста, <a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
 
-						<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста, <a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
+						<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста, <a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>-->
 					</div>
 				</div>
 			</div>

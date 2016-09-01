@@ -1,12 +1,11 @@
 $(document).ready(function(){
 	
-	//$('.main-nav--cross').click(function(){
+	
 		$('.main-nav--cross').click(function(){
 		$('.new-nav').slideToggle();
 
 
-		/*var w=$(window).width();
-		if(w>800).css('display','none');*/
+		
 
 
 });
@@ -24,7 +23,7 @@ $(document).ready(function(){
 	/*-------------check form---------------------------*/
 
 
-			var $this_fl=$('.kottedj-wrap__single--fl');
+			/*var $this_fl=$('.kottedj-wrap__single--fl');
 			var $this_oz=$('.kottedj-wrap__single--oz');
 			var $this_ol=$('.kottedj-wrap__single--ol');
 			var $this_pr=$('.kottedj-wrap__single--pr');
@@ -61,6 +60,62 @@ $(document).ready(function(){
 			$this_ol.fadeOut();
 			$this_oz.fadeOut();
 			$this_fl.fadeOut();
-						});
-/*---------------end document ready-----------*/		
+						});*/
+
+
+
+$('.genwrap').on('click', function(e){
+//e.preventDefault();
+var index = $(this).index();
+
+$('.kottedj-wrap__single').hide();
+$('.kottedj-wrap__single').eq(index).show();
+});	
+
+/*--------------check forarrive or now----------------------*/
+
+$('.fa-check').click(function(e){
+	var $thisFacheck=e.target;
+	
+if($('.fa-check').is($thisFacheck)){
+$(this).toggleClass('fa-check--myactive');
+}
+
+/*else if($('.fa-check').is(!($thisFacheck))){
+	$(this).removeClass('fa-check--myactive');
+}*/
+
+});
+
+
+/*------------error for submit-----------------------*/
+
+/*$('.sub').click(function(){
+	var $drd=$('#datarest__day').val();
+	var $drm=$('#datarest__month').val();
+	var $dry=$('#datarest__year').val();
+	//var $drfn=$('#fname').val();
+	 
+    
+	
+	var $msg=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+
+		'<a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>');
+	//var $msg2=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+
+		//'<a href="#fname__req" class="for__pay__required">заполните </a>персональную информацию, чтобы увидеть сумму к оплате.</p>');
+
+	if((!($drd .match(/[0-31]/))) || (!($drm .match(/[0-12]/))) & (!($dry.match(/[2016]/))){
+		alert('неправидьно');
+
+
+		$('.for__error').append($msg);
+		}
+
+	else{
+		$('.for__error').append('ok');
+		
+	}
+
+});*/
+
+/*---------------end document ready-----------*/	
 	});
