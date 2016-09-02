@@ -90,26 +90,35 @@ $(this).toggleClass('fa-check--myactive');
 
 /*------------ submit-----------------------*/
 
-var $msg=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+ 
-'<a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>'); 
+var $msg=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+
+	'<a href="#date__req" class="for__pay__required">выберите дату въезда и выезда</a>, чтобы увидеть сумму к оплате.</p>'); 
 var $msg2=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+ 
-'<a href="#fname__req" class="for__pay__required">заполните </a>персональную информацию, чтобы увидеть сумму к оплате.</p>'); 
+'<a href="#fname__req" class="for__pay__required">заполните персональную информацию</a>, чтобы увидеть сумму к оплате.</p>'); 
 
 $('#rest__form').validate({
+
 	
 
 	 errorPlacement: function(error, element) {
+
 	
     if (element.attr("name") == "dateArr") {
+
+
       error.insertAfter(".for__error").append($msg);
+      
    } 
    else if (element.attr("name") == "Kode"){
      error.insertAfter(".for__error").append($msg2);
+
    	}
+   	//e.preventDefault();
    }
+
   
  
 });
-
+//<a href="#date__req" class="for__pay__required">
+//<a href="#fname__req" class="for__pay__required">
 /*---------------end document ready-----------*/	
 	});
