@@ -2026,7 +2026,16 @@ sandvich-end----------------------------------------*/
 .datarest__title {
   margin-bottom: 22px; }
 
-.datarest__inp {
+/*.datarest__inp{
+	display: inline-block;
+	width: 50px;
+	font-size: 14px;
+	color: $sotial_color;
+	margin: -10px;	
+}*/
+input[name="dateArr"], input[name="monthArr"], input[name="yearArr"], input[name="dateLeave"],
+input[name="monthLeave"],
+input[name="yearLeave"] {
   display: inline-block;
   width: 50px;
   font-size: 14px;
@@ -2528,6 +2537,13 @@ sandvich-end----------------------------------------*/
   font-size: 14px;
   padding: 18px 0;
   text-transform: uppercase; }
+
+.error {
+  color: red;
+  font-weight: bold; }
+
+input.error {
+  border: 1px solid red; }
 
 @media only screen and (max-width: 780px) {
   .datarest__wrap {

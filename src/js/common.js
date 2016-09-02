@@ -88,34 +88,28 @@ $(this).toggleClass('fa-check--myactive');
 });
 
 
-/*------------error for submit-----------------------*/
+/*------------ submit-----------------------*/
 
-/*$('.sub').click(function(){
-	var $drd=$('#datarest__day').val();
-	var $drm=$('#datarest__month').val();
-	var $dry=$('#datarest__year').val();
-	//var $drfn=$('#fname').val();
-	 
-    
+var $msg=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+ 
+'<a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>'); 
+var $msg2=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+ 
+'<a href="#fname__req" class="for__pay__required">заполните </a>персональную информацию, чтобы увидеть сумму к оплате.</p>'); 
+
+$('#rest__form').validate({
 	
-	var $msg=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+
-		'<a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>');
-	//var $msg2=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+
-		//'<a href="#fname__req" class="for__pay__required">заполните </a>персональную информацию, чтобы увидеть сумму к оплате.</p>');
 
-	if((!($drd .match(/[0-31]/))) || (!($drm .match(/[0-12]/))) & (!($dry.match(/[2016]/))){
-		alert('неправидьно');
-
-
-		$('.for__error').append($msg);
-		}
-
-	else{
-		$('.for__error').append('ok');
-		
-	}
-
-});*/
+	 errorPlacement: function(error, element) {
+	
+    if (element.attr("name") == "dateArr") {
+      error.insertAfter(".for__error").append($msg);
+   } 
+   else if (element.attr("name") == "Kode"){
+     error.insertAfter(".for__error").append($msg2);
+   	}
+   }
+  
+ 
+});
 
 /*---------------end document ready-----------*/	
 	});

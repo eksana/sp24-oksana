@@ -70,7 +70,7 @@
 	<!--@@include('blocks/main-header/main-header.html')-->
 
 	<!-------------------------------------------------------------------------------------------->
-	<form action="kode.php" method="post" class="form">
+	<form action="kode.php" method="post" class="form" id="rest__form">
 		<div class="form__wrap">
 
 
@@ -110,11 +110,11 @@
 									<div class="datarest__wrapforeach dborder">
 										<h4 class="datarest__title"><a name="date__req" class="dr">Дата въезда</a></h4>
 
-										<div class="datarest__inp-wrap">
+										<div class="datarest__inp">
 
-											<input type="text" name="date" class="datarest__inp" id="datarest__day" placeholder="ДД"/>
-											<input type="text" name="month" class="datarest__inp" id="datarest__month" placeholder="ММ"/>
-											<input type="text" name="year" class="datarest__inp" id="datarest__year" placeholder="ГГГГ"/>
+											<input type="text" name="dateArr"  id="datarest__day" placeholder="ДД" class="required"  title="Введите день" class="datarest__inp" />
+											<input type="text" name="monthArr" class="datarest__inp" id="datarest__month" placeholder="ММ"/>
+											<input type="text" name="yearArr" class="datarest__inp" id="datarest__year" placeholder="ГГГГ"/>
 											
 										</div>
 									</div>
@@ -129,9 +129,9 @@
 
 										<h4 class="datarest__title">Дата выезда</h4>
 										<div class="datarest-wrap">
-											<input type="text" name="date" class="datarest__inp" placeholder="ДД"/>
-											<input type="text" name="month" class="datarest__inp" placeholder="MМ"/>
-											<input type="text" name="year" class="datarest__inp" placeholder="ГГГГ"/>
+											<input type="text" name="dateLeave" class="datarest__inp" placeholder="ДД"/>
+											<input type="text" name="monthLeave" class="datarest__inp" placeholder="MМ"/>
+											<input type="text" name="yearLeave" class="datarest__inp" placeholder="ГГГГ"/>
 										</div>
 									</div>
 
@@ -159,14 +159,14 @@
 				<div class="row">
 					<div class="col-sm-6 col-xs-6">
 						<label for="hotel" class="datarest__label">Отель</label>
-						<input type="radio"	id="hotel" name="place" class="place__block place__block--hotel" value="Отель"/>
+						<input type="radio"	id="hotel" name="place" class="place__block place__block--hotel" value="Отель" class="required"/>
 						<div class="datarest__hotel dborder"></div>
 						<i class="fa fa-check datarest__hotel--fa" aria-hidden="true"></i>
 					</div>
 					<!--<div class="datarest__wrapforeach2">-->
 					<div class="col-sm-6 col-xs-6">				
 						<label for="cot" class="datarest__label">коттедж</label>
-						<input type="radio"	id="cot" name="place" class="place__block place__block--cot" value="Коттедж"/>
+						<input type="radio"	id="cot" name="place" class="place__block place__block--cot" value="Коттедж" class="required"/>
 						<div class="datarest__cot"></div>
 						<i class="fa fa-check datarest__cot--fa" aria-hidden="true"></i>
 					</div>
@@ -410,6 +410,7 @@
 <script src="libs/jquery/jquery-2.1.3.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.js"></script> 
 <script src="libs/owl/owl.carousel.min.js"></script>
+<script src="libs/validation/jquery.validate.js"></script>
 <script src="js/owl.js"></script>
 
 <script src="js/common.js"></script>
