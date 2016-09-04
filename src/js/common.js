@@ -93,32 +93,110 @@ $(this).toggleClass('fa-check--myactive');
 var $msg=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+
 	'<a href="#date__req" class="for__pay__required">выберите дату въезда и выезда</a>, чтобы увидеть сумму к оплате.</p>'); 
 var $msg2=$('<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста,'+ 
-'<a href="#fname__req" class="for__pay__required">заполните персональную информацию</a>, чтобы увидеть сумму к оплате.</p>'); 
-
-$('#rest__form').validate({
-
-	
-
-	 errorPlacement: function(error, element) {
-
-	
-    if (element.attr("name") == "dateArr") {
+'<a href="#fname__req" class="for__pay__required">заполните персональную информацию</a>, чтобы увидеть сумму к оплате.</p>');
 
 
-      error.insertAfter(".for__error").append($msg);
-      
-   } 
-   else if (element.attr("name") == "Kode"){
-     error.insertAfter(".for__error").append($msg2);
+  $('.form').each(function(){
+    // Объявляем переменные (форма и кнопка отправки)
+	var form = $(this),
+        btn = form.find('.btn_submit');
 
-   	}
-   	//e.preventDefault();
-   }
+    // Добавляем каждому проверяемому полю, указание что поле пустое
+	form.find('.rfield').addClass('empty_field');
 
-  
- 
-});
-//<a href="#date__req" class="for__pay__required">
-//<a href="#fname__req" class="for__pay__required">
+    // Функция проверки полей формы
+    function checkInput(){
+      form.find('.rfield').each(function(){
+        if($(this).val() !==''){
+         
+		 // Если поле не пустое удаляем класс-указание
+		//$(this).removeClass('empty_field');
+		$(this).removeClass('empty_field').addClass('notempty_field');
+		//в блоке "к оплате" подсказку скрываем
+		//$('#f').hide();
+
+        } 
+        else {
+        	// Если поле пустое добавляем класс-указание
+        	$(this).addClass('empty_field');
+		//делаем в блоке "к оплате" подсказку видимой
+		//$('.for__error').append('$msg');
+        	
+          
+        }
+      });
+    }
+
+    // Функция подсветки незаполненных полей
+    function lightEmpty(){
+
+      //form.find('.empty_field').css({'border-color':'#d8512d'});
+      form.find('.empty_field').addClass('er');
+
+      if(form.find('.empty_field').is('#nc')){
+$('.for__error').append($msg);
+      }
+
+       if(form.find('.empty_field').is('#ln')){
+      	$('.for__error').append($msg2);
+      }
+
+      //form.find('.empty_field').not('[name="dateArr"]').before('<i class="fa fa-check now__fa-check fa-check--no-active"></i>');
+      //$('.for__error').append($msg);
+     form.find('.notempty_field').removeClass('er').addClass('noer');
+
+    /*else(('#ln').val()!==""){
+     	($msg2).hide();
+     }*/
+     
+//$('.for__error').remove($msg);
+     
+       
+
+      // Через полсекунды удаляем подсветку
+      /*setTimeout(function(){
+        form.find('.empty_field').removeAttr('style');
+      },500);*/
+    }
+
+
+    // Проверка в режиме реального времени
+    setInterval(
+    	function(){
+      // Запускаем функцию проверки полей на заполненность
+	  checkInput();
+      // Считаем к-во незаполненных полей
+      var sizeEmpty = form.find('.empty_field').size();
+      // Вешаем условие-тригер на кнопку отправки формы
+      if(sizeEmpty > 0){
+        if(btn.hasClass('disabled')){
+          return false
+        } else {
+          btn.addClass('disabled')
+        }
+      } else {
+        btn.removeClass('disabled');
+
+
+      }
+    },500);
+
+    // Событие клика по кнопке отправить
+    btn.click(function(){
+      if($(this).hasClass('disabled')){
+        // подсвечиваем незаполненные поля и форму не отправляем, если есть незаполненные поля
+		lightEmpty();
+        return false
+      } else {
+        // Все хорошо, все заполнено, отправляем форму
+          
+       form.submit();
+      }
+    });
+  });
+//});
+
+//})( jQuery );
+
 /*---------------end document ready-----------*/	
 	});

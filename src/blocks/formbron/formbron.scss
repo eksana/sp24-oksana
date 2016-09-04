@@ -126,6 +126,7 @@ input[name="yearLeave"] {
 
 .place__block{
 	display: none;
+	/*opacity:0;*/
 }
 .datarest__label{
 	display: inline-block;
@@ -210,7 +211,7 @@ input[name="yearLeave"] {
 	width: 100%;
 	
 	max-width:1200px;
-	border:1px solid red;
+	/*border:1px solid red;*/
 }
 .parent__label{
 	margin-top: 50px;
@@ -293,7 +294,7 @@ input[name="yearLeave"] {
 	padding: 86px 36px;
 	background-color: #FFF;
 	
-	border:1px solid red;
+	/*border:1px solid red;*/
 }
 .kottedj__descr--s{
 	background:#fff url("../img/Squad_rule_128.png") no-repeat center 10%;
@@ -479,7 +480,7 @@ input[name="yearLeave"] {
 .kottedj-gen{
 	width: 100%;
 	height: 200px;
-	border:1px solid magenta;
+	
 	overflow:hidden;
 	margin-top:-50px;
 }
@@ -528,7 +529,7 @@ input[name="yearLeave"] {
 }
 .for__pay{
 	height: 255px;
-	padding: 24px 24px 79px;
+	padding: 24px 7px 79px;
 	background-color: #FFF;
 }
 .for__pay__h4{
@@ -591,6 +592,7 @@ color: #333;
 }
 .for__pay__p{
 	color: lightgrey;
+	
 }
 .parent__labelarr{
 	text-transform: uppercase;
@@ -599,7 +601,18 @@ color: #333;
 	color: lightgrey;
 }
 .fa-check--myactive{
+
 	color: $sotial_color;
+}
+#f,#s{
+	background: url("../img/al.png")no-repeat left;
+	/*  display: none;*/
+}
+.er{
+	background: url("../img/cross.png")no-repeat left;
+}
+.noer{
+	background: url("../img/check2.png")no-repeat left;
 }
 .now{
 	width: 100%;
@@ -639,6 +652,7 @@ color: #333;
 .cart__block, .kode__block, .name__block, .date__block{
 display: block;
 margin-bottom: 30px;
+text-align: center;
 }
 .for__pay__required{
 	border-bottom:1px dotted #222;
@@ -659,11 +673,19 @@ margin-bottom: 30px;
 	text-transform: uppercase;
 }
 .error{
-	color: red;
-	font-weight: bold;
+	/*color: red;
+	font-weight: bold;*/
+	border-bottom:1px dotted #222;
+	display: block;
+	color: #222;
+	background: url("../img/al.png")no-repeat left;
 }
 input.error{
 	border: 1px solid red;
+}
+.disabled, .disabled:hover{
+	background-color: #afdde6;
+	cursor: default;
 }
 
 

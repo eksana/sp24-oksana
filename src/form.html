@@ -112,9 +112,9 @@
 
 										<div class="datarest__inp">
 
-											<input type="text" name="dateArr"  id="datarest__day" placeholder="ДД" class="required"  title="Введите день" class="datarest__inp" />
-											<input type="text" name="monthArr" class="datarest__inp" id="datarest__month" placeholder="ММ"/>
-											<input type="text" name="yearArr" class="datarest__inp" id="datarest__year" placeholder="ГГГГ"/>
+											<input type="text" name="dateArr" id="datarest__day"   class="rfield" title="Пожалуйста, напишите день заезда" placeholder="ДД"/>
+											<input type="text" name="monthArr"  id="datarest__month" title="Пожалуйста, напишите месяц заезда" placeholder="ММ"/>
+											<input type="text" name="yearArr"  id="datarest__year" class="rfield" title="Пожалуйста, напишите год заезда" placeholder="ГГГГ"/>
 											
 										</div>
 									</div>
@@ -129,9 +129,9 @@
 
 										<h4 class="datarest__title">Дата выезда</h4>
 										<div class="datarest-wrap">
-											<input type="text" name="dateLeave" class="datarest__inp" placeholder="ДД"/>
-											<input type="text" name="monthLeave" class="datarest__inp" placeholder="MМ"/>
-											<input type="text" name="yearLeave" class="datarest__inp" placeholder="ГГГГ"/>
+											<input type="text" name="dateLeave"  placeholder="ДД"/>
+											<input type="text" name="monthLeave"  placeholder="MМ"/>
+											<input type="text" name="yearLeave"  placeholder="ГГГГ"/>
 										</div>
 									</div>
 
@@ -159,14 +159,14 @@
 				<div class="row">
 					<div class="col-sm-6 col-xs-6">
 						<label for="hotel" class="datarest__label">Отель</label>
-						<input type="radio"	id="hotel" name="place" class="place__block place__block--hotel" value="Отель" class="required"/>
+						<input type="radio"	id="hotel" name="place" class="place__block place__block--hotel" value="Отель" class="rfield" title="Выберите место отдыха"/>
 						<div class="datarest__hotel dborder"></div>
 						<i class="fa fa-check datarest__hotel--fa" aria-hidden="true"></i>
 					</div>
 					<!--<div class="datarest__wrapforeach2">-->
 					<div class="col-sm-6 col-xs-6">				
 						<label for="cot" class="datarest__label">коттедж</label>
-						<input type="radio"	id="cot" name="place" class="place__block place__block--cot" value="Коттедж" class="required"/>
+						<input type="radio"	id="cot" name="place" class="place__block place__block--cot" value="Коттедж" class="rfield"/>
 						<div class="datarest__cot"></div>
 						<i class="fa fa-check datarest__cot--fa" aria-hidden="true"></i>
 					</div>
@@ -186,7 +186,7 @@
 					<div class="genwrap genwrap--fl">
 
 						<label for="Fl" class="parent__label parent__label--fl">Флагман</label>
-						<input type="radio"	name="kottedj" id="Fl" class="kottedj__block kottedj__block--fl" value="Флагман"/>
+						<input type="radio"	name="kottedj" id="Fl" class="kottedj__block kottedj__block--fl" value="Флагман" checked="checked" />
 						
 						<i class="fa fa-check kottedj-wrapforeach--fl--fa" aria-hidden="true"></i>
 
@@ -245,7 +245,7 @@
 					</div>
 
 					<div class="kottedj-wrap__single kottedj-wrap__single--pr">
-						<div class="kottedj__descr kottedj__descr--s"><p class="kottedj__descr__p">Площадь 100м2</p></div>
+						<div class="kottedj__descr kottedj__descr--s"><p class="kottedj__descr__p">Площадь 200м2</p></div>
 						<div class="kottedj__descr kottedj__descr--r"><p class="kottedj__descr__p">3 комнаты</p></div>
 						<div class="kottedj__descr kottedj__descr--b"><p class="kottedj__descr__p">5 спальных мест</p></div>
 						<div class="kottedj__descr kottedj__descr--c"><p class="kottedj__descr__p">Раздельный санузел</p></div>
@@ -267,22 +267,22 @@
 				<div class="row">
 					<div class="col-sm-6">	
 
-						<input type="text"	name="First Name" class="personal__block" id="fname" placeholder="Имя" required="required" />
+						<input type="text"	name="First Name" class="personal__block rfield" id="fname" placeholder="Имя" title="Пожалуйста, напишите Ваше имя" />
 					</div>
 					<div class="col-sm-6">
-						<input type="text"	name="Last Name" class="personal__block" id="lname" placeholder="Фамалия" required="required" />
+						<input type="text"	name="Last Name" class="personal__block rfield" id="lname" placeholder="Фамалия" title="Пожалуйста, напишите Вашу фамилию" />
 
 
 
 
 					</div>
 					<div class="col-sm-6">
-						<input type="phone"	name="phone" class="personal__block" id="tlf" placeholder="Номер телефона" required="required" />
+						<input type="phone"	name="phone" class="personal__block rfield" id="tlf" placeholder="Номер телефона"  title="Пожалуйста, напишите ваш телефон" />
 						<p class="datarest__forinput-descr">Мы свяжемся с вами в случае необходимости</p>
 					</div>
 					<div class="col-sm-6">
 
-						<input type="email"	name="email" class="personal__block" id="eml" placeholder="email" required="required" />
+						<input type="email"	name="email" class="personal__block rfield" id="eml" placeholder="email" title="Пожалуйста, напишите Ваш email" />
 						<p class="datarest__forinput-descr">На этот адрес мы вышлем Вам подтверждение о забронированном номере</p>
 					</div>
 				</div>
@@ -321,25 +321,25 @@
 					<div class="data data__nc">
 
 						<label for="nc" class="parent__label__fornc">Номер карты</label>
-						<input type="text"	name="Number cart" id="nc" class="block cart__block" placeholder="0000 - 0000 - 0000 - 0000" required="required"/>
+					<input type="text"	name="Numbercart" id="nc" class="block cart__block rfield" placeholder="0000 - 0000 - 0000 - 0000" title="Пожалуйста, напишите номер карты" />
 					</div>
 
 					<div class="data data__kd">
 
 						<label for="kd" class="parent__label__forkd">Код CVV</label>
-						<input type="text"	name="Kode" class="block kode__block" id="kd" placeholder="121" required="required" />
+						<input type="text"	name="Kode" class="block kode__block rfield" id="kd" placeholder="121" title="Пожалуйста, напишите код" />
 					</div>
 
 					<div class="data data__ln">
 
 						<label for="ln" class="parent__label__forln">Фамилия владельца карты</label>
-						<input type="text"	name="Last name" class="block name__block" id="ln" placeholder="Vladimimr Vladimirov" required="required" />
+						<input type="text"	name="Lastname" class="block name__block rfield" id="ln" placeholder="Vladimimr Vladimirov"  title="Пожалуйста, напишите фамилию" />
 					</div>
 
 					<div class="data data__d">
 
 						<label for="d" class="parent__label__ford">Действует до</label>
-						<input type="date"	name="date" class="block date__block" id="d" placeholder="01/2016" required="required" />
+						<input type="date"	name="date" class="block date__block rfield" id="d" placeholder="01/2016" title="Пожалуйста, напишите срок карты" />
 					</div>
 				</div>
 
@@ -350,9 +350,12 @@
 					<div class="for__pay">
 						<h4 class="for__pay__h4">К оплате</h4>
 						<div class="for__error"></div>
-						<!--<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста, <a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>
+						
+						<!--<i class="fa fa-exclamation-circle">--></i><!--<p class="for__pay__p" id="f">Пожалуйста, <a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>-->
+						
 
-						<i class="fa fa-exclamation-circle"></i><p class="for__pay__p">Пожалуйста, <a href="#date__req" class="for__pay__required">выберите дату </a>въезда и выезда, чтобы увидеть сумму к оплате.</p>-->
+						<!--<i class="fa fa-exclamation-circle"></i>--><!--<p class="for__pay__p" id="s">Пожалуйста,<a href="#fname__req" class="for__pay__required">заполните персональную информацию</a>, чтобы увидеть сумму к оплате.</p>-->
+						
 					</div>
 				</div>
 			</div>
@@ -362,7 +365,7 @@
 
 
 
-	<input type="submit"  class="sub" value="Забронировать"/>
+	<input type="submit"  class="sub disabled btn_submit" value="Забронировать"/>
 </section>
 
 
@@ -410,7 +413,7 @@
 <script src="libs/jquery/jquery-2.1.3.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.js"></script> 
 <script src="libs/owl/owl.carousel.min.js"></script>
-<script src="libs/validation/jquery.validate.js"></script>
+<!--<script src="libs/validation/jquery.validate.js"></script>-->
 <script src="js/owl.js"></script>
 
 <script src="js/common.js"></script>
