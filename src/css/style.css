@@ -1408,7 +1408,8 @@ sandvich-end----------------------------------------*/
   text-align: center; }
 
 .wrapforimg {
-  width: 370px;
+  /*width: 370px;*/
+  width: 577px;
   margin-bottom: 50px; }
 
 .wrapforimg__img {
@@ -2633,8 +2634,9 @@ input.error {
     background-color: grey;
     width: 0;
     height: 0; } }
-.rooms__inner {
-  max-width: 1200px;
+/*.rooms__inner{*/
+.rooms__hotelGV {
+  /*max-width: 1200px;*/
   width: 100%;
   /*height: 200px;*/
   padding-top: 50px;
@@ -2646,7 +2648,7 @@ input.error {
   background-size: cover;
   text-align: center;
   color: #FFF; }
-  .rooms__inner:before {
+  .rooms__hotelGV:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -2724,6 +2726,9 @@ input.error {
   margin-bottom: 30px;
   /*background: url("../img/r6.jpg") no-repeat right center;*/ }
 
+.room__title__hidd {
+  display: none; }
+
 section {
   border: none; }
 
@@ -2747,7 +2752,7 @@ section {
 @media only screen and (max-width: 940px) {
   .more {
     color: #222;
-    margin-top: 10px;
+    margin-top: 30px;
     display: inline-block; }
 
   .room__wrapforeach {
@@ -2777,4 +2782,15 @@ section {
 
   .room__descr {
     margin-top: 15px;
-    margin-bottom: 14px; } }
+    margin-bottom: 14px; }
+
+  .room__wrapgen {
+    margin-top: 80px; }
+
+  .room__title__hidd {
+    font-size: 24px;
+    padding-bottom: 40px;
+    display: block; }
+
+  .room__title {
+    display: none; } }

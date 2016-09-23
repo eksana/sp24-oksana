@@ -1,5 +1,6 @@
-.rooms__inner{
-	max-width: 1200px;
+/*.rooms__inner{*/
+	.rooms__hotelGV{
+	/*max-width: 1200px;*/
 	width: 100%;
 	/*height: 200px;*/
 	padding-top: 50px;
@@ -101,6 +102,10 @@ border:2px solid #ebebeb;
 	/*background: url("../img/r6.jpg") no-repeat right center;*/
 	
 }
+.room__title__hidd{
+	
+	display:none;
+}
 section{
 	border:none;
 	}
@@ -123,12 +128,13 @@ section{
 padding-left: 30px;
 padding-right: 40px;
 }
+
 }
 
 @media only screen and (max-width : 940px) {
 	.more{
     color: #222;
-    margin-top: 10px;
+    margin-top: 30px;
     display: inline-block;
 }
 .room__wrapforeach{
@@ -166,6 +172,17 @@ padding-right: 40px;
 .room__descr {
     margin-top: 15px;
     margin-bottom: 14px;
+}
+.room__wrapgen{
+margin-top: 80px;
+}
+.room__title__hidd{
+	font-size: 24px;
+	padding-bottom: 40px;
+	display:block;
+}
+.room__title{
+	display: none;
 }
 
 }
